@@ -23,6 +23,23 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? 'hidden' : '';
+
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setMobileOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [mobileOpen]);
+
   const links = [
     { href: '#invitation', label: t.navInvitation },
     { href: '#events', label: t.navEvents },
@@ -31,6 +48,25 @@ const Navbar = () => {
   ];
 
   const closeMobile = () => setMobileOpen(false);
+
+  const renderLinks = () => (
+    <ul className="nav-links" id="primary-navigation">
+      {links.map((link, i) => (
+        <li key={link.href}>
+          <motion.a
+            href={link.href}
+            onClick={closeMobile}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 + i * 0.1 }}
+          >
+            {link.label}
+          </motion.a>
+        </li>
+      ))}
+      <li>{renderLanguageToggle('lang-toggle desktop')}</li>
+    </ul>
+  );
 
   const renderLanguageToggle = (className) => (
     <div className={className} role="group" aria-label="Language selector">
@@ -49,49 +85,47 @@ const Navbar = () => {
   );
 
   return (
-    <motion.nav
-      className={`navbar ${scrolled ? 'scrolled' : ''}`}
-      initial={{ y: -80 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6, delay: 0.3 }}
-    >
-      <button
-        className="mobile-menu-btn"
-        onClick={() => setMobileOpen(!mobileOpen)}
-        aria-label="Toggle menu"
+    <>
+      <motion.nav
+        className={`navbar ${scrolled ? 'scrolled' : ''}`}
+        initial={{ y: -80 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
       >
-        {mobileOpen ? '✕' : '☰'}
-      </button>
+        <button
+          type="button"
+          className={`mobile-menu-btn ${mobileOpen ? 'is-hidden' : ''}`}
+          onClick={() => setMobileOpen(true)}
+          aria-label="Open menu"
+          aria-expanded={mobileOpen}
+          aria-controls="primary-navigation"
+        >
+          ☰
+        </button>
 
-      <ul className={`nav-links ${mobileOpen ? 'mobile-open' : ''}`}>
-        {mobileOpen && (
+        <div className="nav-menu desktop-nav">
+          {renderLinks()}
+        </div>
+
+        {renderLanguageToggle('lang-toggle mobile')}
+      </motion.nav>
+
+      {mobileOpen && (
+        <div className="mobile-nav-overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
           <button
-            className="mobile-menu-btn"
+            type="button"
+            className="mobile-menu-close"
             onClick={closeMobile}
-            style={{ position: 'absolute', top: '1.5rem', right: '1.5rem' }}
             aria-label="Close menu"
           >
             ✕
           </button>
-        )}
-        {links.map((link, i) => (
-          <li key={link.href}>
-            <motion.a
-              href={link.href}
-              onClick={closeMobile}
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 + i * 0.1 }}
-            >
-              {link.label}
-            </motion.a>
-          </li>
-        ))}
-        <li>{renderLanguageToggle('lang-toggle desktop')}</li>
-      </ul>
-
-      {renderLanguageToggle('lang-toggle mobile')}
-    </motion.nav>
+          <div className="nav-menu mobile-open">
+            {renderLinks()}
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

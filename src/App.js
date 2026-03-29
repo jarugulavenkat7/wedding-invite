@@ -10,6 +10,8 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Loader from './components/Loader';
 import FloralDivider from './components/FloralDivider';
+import BackgroundMusic from './components/BackgroundMusic';
+import LoveTapEffect from './components/LoveTapEffect';
 import './App.css';
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
             transition={{ duration: 0.8 }}
             className="app"
           >
+            <LoveTapEffect />
+            <BackgroundMusic />
             <Navbar />
             <Hero />
             <FloralDivider />

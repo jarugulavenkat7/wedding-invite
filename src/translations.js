@@ -12,7 +12,7 @@ const translations = {
     heroSubtitle: 'Wedding Invitation',
     heroName1: 'Suma',
     heroName2: 'Naresh',
-    heroDate: 'Monday, 15th June 2026',
+    heroDate: 'Sunday, 10th May 2026 · 9:02 AM',
     heroTagline: 'రెండు హృదయాలు ఒక్కటయ్యే రోజు ✨',
     days: 'Days',
     hours: 'Hours',
@@ -31,9 +31,9 @@ const translations = {
     groomName: 'Naresh',
     groomParents: "Son of Mr. & Mrs. [Groom's Parents' Name]",
     dateLabel: 'Date:',
-    dateValue: 'Monday, 15th June 2026',
+    dateValue: 'Sunday, 10th May 2026',
     muhurthamLabel: 'Muhurtham:',
-    muhurthamValue: '9:00 AM - 10:30 AM',
+    muhurthamValue: '9:02 AM',
     venueLabel: 'Venue:',
     venueValue: 'Sri Lakshmi Narasimha Kalyana Mandapam',
     venueAddress: 'Temple Street, Tirupati, Andhra Pradesh',
@@ -73,8 +73,8 @@ const translations = {
         icon: '💒',
         name: 'Wedding Ceremony',
         nameSub: 'పెళ్ళి',
-        date: 'Monday, 15th June 2026',
-        time: 'Muhurtham: 9:00 AM',
+        date: 'Sunday, 10th May 2026',
+        time: 'Muhurtham: 9:02 AM',
         venue: 'Sri Lakshmi Narasimha Kalyana Mandapam',
       },
       {
@@ -123,9 +123,16 @@ const translations = {
 
     // Footer
     footerNames: 'Suma & Naresh',
-    footerDate: '15 · 06 · 2026',
+    footerDate: '10 · 05 · 2026',
     footerQuote: '"Two souls with but a single thought,\nTwo hearts that beat as one."',
     footerMadeWith: "Made with ❤️ for Suma & Naresh's Wedding",
+
+    // Music
+    musicLoading: 'Loading Melody',
+    musicOn: 'Melody On',
+    musicOff: 'Melody Off',
+    musicPlayLabel: 'Play background melody',
+    musicPauseLabel: 'Pause background melody',
 
     // Loader
     loaderName: 'Suma & Naresh',
@@ -145,7 +152,7 @@ const translations = {
     heroSubtitle: 'శుభలేఖ',
     heroName1: 'సుమ',
     heroName2: 'నరేష్',
-    heroDate: 'సోమవారం, 15 జూన్ 2026',
+    heroDate: 'ఆదివారం, 10 మే 2026 · ఉదయం 9:02',
     heroTagline: 'రెండు హృదయాలు ఒక్కటయ్యే రోజు ✨',
     days: 'రోజులు',
     hours: 'గంటలు',
@@ -164,9 +171,9 @@ const translations = {
     groomName: 'నరేష్',
     groomParents: 'శ్రీమతి & శ్రీ [వరుడి తల్లిదండ్రుల పేరు] కుమారుడు',
     dateLabel: 'తేదీ:',
-    dateValue: 'సోమవారం, 15 జూన్ 2026',
+    dateValue: 'ఆదివారం, 10 మే 2026',
     muhurthamLabel: 'ముహూర్తం:',
-    muhurthamValue: 'ఉదయం 9:00 - 10:30',
+    muhurthamValue: 'ఉదయం 9:02',
     venueLabel: 'వేదిక:',
     venueValue: 'శ్రీ లక్ష్మీ నరసింహ కళ్యాణ మండపం',
     venueAddress: 'టెంపుల్ స్ట్రీట్, తిరుపతి, ఆంధ్రప్రదేశ్',
@@ -206,8 +213,8 @@ const translations = {
         icon: '💒',
         name: 'వివాహ వేడుక',
         nameSub: 'పెళ్ళి',
-        date: 'సోమవారం, 15 జూన్ 2026',
-        time: 'ముహూర్తం: ఉదయం 9:00',
+        date: 'ఆదివారం, 10 మే 2026',
+        time: 'ముహూర్తం: ఉదయం 9:02',
         venue: 'శ్రీ లక్ష్మీ నరసింహ కళ్యాణ మండపం',
       },
       {
@@ -256,9 +263,16 @@ const translations = {
 
     // Footer
     footerNames: 'సుమ & నరేష్',
-    footerDate: '15 · 06 · 2026',
+    footerDate: '10 · 05 · 2026',
     footerQuote: '"రెండు ఆత్మలు ఒకే ఆలోచనతో,\nరెండు హృదయాలు ఒకేలా కొట్టుకుంటాయి."',
     footerMadeWith: 'సుమ & నరేష్ వివాహం కోసం ❤️ తో తయారు చేయబడింది',
+
+    // Music
+    musicLoading: 'మెలోడీ లోడ్ అవుతోంది',
+    musicOn: 'మెలోడీ ఆన్',
+    musicOff: 'మెలోడీ ఆఫ్',
+    musicPlayLabel: 'బ్యాక్‌గ్రౌండ్ మెలోడీ ప్రారంభించండి',
+    musicPauseLabel: 'బ్యాక్‌గ్రౌండ్ మెలోడీ ఆపండి',
 
     // Loader
     loaderName: 'సుమ & నరేష్',
@@ -278,7 +292,7 @@ const translations = {
     heroSubtitle: 'ಮದುವೆ ಆಮಂತ್ರಣ',
     heroName1: 'ಸುಮಾ',
     heroName2: 'ನರೇಶ್',
-    heroDate: 'ಸೋಮವಾರ, 15 ಜೂನ್ 2026',
+    heroDate: 'ಭಾನುವಾರ, 10 ಮೇ 2026 · ಬೆಳಿಗ್ಗೆ 9:02',
     heroTagline: 'ಎರಡು ಹೃದಯಗಳು ಒಂದಾಗುವ ದಿನ ✨',
     days: 'ದಿನಗಳು',
     hours: 'ಗಂಟೆಗಳು',
@@ -297,9 +311,9 @@ const translations = {
     groomName: 'ನರೇಶ್',
     groomParents: 'ಶ್ರೀಮತಿ & ಶ್ರೀ [ವರನ ತಂದೆತಾಯಿಯ ಹೆಸರು] ಅವರ ಪುತ್ರ',
     dateLabel: 'ದಿನಾಂಕ:',
-    dateValue: 'ಸೋಮವಾರ, 15 ಜೂನ್ 2026',
+    dateValue: 'ಭಾನುವಾರ, 10 ಮೇ 2026',
     muhurthamLabel: 'ಮುಹೂರ್ತ:',
-    muhurthamValue: 'ಬೆಳಿಗ್ಗೆ 9:00 - 10:30',
+    muhurthamValue: 'ಬೆಳಿಗ್ಗೆ 9:02',
     venueLabel: 'ಸ್ಥಳ:',
     venueValue: 'ಶ್ರೀ ಲಕ್ಷ್ಮೀ ನರಸಿಂಹ ಕಲ್ಯಾಣ ಮಂಟಪ',
     venueAddress: 'ಟೆಂಪಲ್ ಸ್ಟ್ರೀಟ್, ತಿರುಪತಿ, ಆಂಧ್ರ ಪ್ರದೇಶ',
@@ -339,8 +353,8 @@ const translations = {
         icon: '💒',
         name: 'ಮದುವೆ ಸಮಾರಂಭ',
         nameSub: 'ಮದುವೆ',
-        date: 'ಸೋಮವಾರ, 15 ಜೂನ್ 2026',
-        time: 'ಮುಹೂರ್ತ: ಬೆಳಿಗ್ಗೆ 9:00',
+        date: 'ಭಾನುವಾರ, 10 ಮೇ 2026',
+        time: 'ಮುಹೂರ್ತ: ಬೆಳಿಗ್ಗೆ 9:02',
         venue: 'ಶ್ರೀ ಲಕ್ಷ್ಮೀ ನರಸಿಂಹ ಕಲ್ಯಾಣ ಮಂಟಪ',
       },
       {
@@ -389,9 +403,16 @@ const translations = {
 
     // Footer
     footerNames: 'ಸುಮಾ & ನರೇಶ್',
-    footerDate: '15 · 06 · 2026',
+    footerDate: '10 · 05 · 2026',
     footerQuote: '"ಎರಡು ಆತ್ಮಗಳು ಒಂದೇ ಆಲೋಚನೆಯೊಂದಿಗೆ,\nಎರಡು ಹೃದಯಗಳು ಒಂದೇ ತರಹ ತಡಕಾಡುತ್ತವೆ."',
     footerMadeWith: 'ಸುಮಾ & ನರೇಶ್ ಮದುವೆಗಾಗಿ ❤️ ಜೊತೆ ನಿರ್ಮಿಸಲಾಗಿದೆ',
+
+    // Music
+    musicLoading: 'ಮೆಲಡಿ ಲೋಡ್ ಆಗುತ್ತಿದೆ',
+    musicOn: 'ಮೆಲಡಿ ಆನ್',
+    musicOff: 'ಮೆಲಡಿ ಆಫ್',
+    musicPlayLabel: 'ಹಿನ್ನೆಲೆ ಮೆಲಡಿಯನ್ನು ಚಾಲನೆ ಮಾಡಿ',
+    musicPauseLabel: 'ಹಿನ್ನೆಲೆ ಮೆಲಡಿಯನ್ನು ನಿಲ್ಲಿಸಿ',
 
     // Loader
     loaderName: 'ಸುಮಾ & ನರೇಶ್',

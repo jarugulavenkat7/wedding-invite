@@ -63,7 +63,7 @@ const Hero = () => {
         </motion.div>
       ))}
 
-      {/* Mango leaf torana */}
+      {/* Previous leaf decoration kept here for reference
       <div className="hero-mango-leaves">
         {[...Array(20)].map((_, i) => (
           <motion.span
@@ -77,6 +77,7 @@ const Hero = () => {
           </motion.span>
         ))}
       </div>
+      */}
 
       {/* Auspicious text */}
       <motion.div

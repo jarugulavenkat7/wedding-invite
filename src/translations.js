@@ -127,6 +127,13 @@ const translations = {
     footerQuote: '"Two souls with but a single thought,\nTwo hearts that beat as one."',
     footerMadeWith: "Made with ❤️ for Suma & Naresh's Wedding",
 
+    // Music
+    musicLoading: 'Loading Melody',
+    musicOn: 'Melody On',
+    musicOff: 'Melody Off',
+    musicPlayLabel: 'Play background melody',
+    musicPauseLabel: 'Pause background melody',
+
     // Loader
     loaderName: 'Suma & Naresh',
     loaderSubName: 'సుమ & నరేష్ · ಸುಮಾ & ನರೇಶ್',
@@ -260,6 +267,13 @@ const translations = {
     footerQuote: '"రెండు ఆత్మలు ఒకే ఆలోచనతో,\nరెండు హృదయాలు ఒకేలా కొట్టుకుంటాయి."',
     footerMadeWith: 'సుమ & నరేష్ వివాహం కోసం ❤️ తో తయారు చేయబడింది',
 
+    // Music
+    musicLoading: 'మెలోడీ లోడ్ అవుతోంది',
+    musicOn: 'మెలోడీ ఆన్',
+    musicOff: 'మెలోడీ ఆఫ్',
+    musicPlayLabel: 'బ్యాక్‌గ్రౌండ్ మెలోడీ ప్రారంభించండి',
+    musicPauseLabel: 'బ్యాక్‌గ్రౌండ్ మెలోడీ ఆపండి',
+
     // Loader
     loaderName: 'సుమ & నరేష్',
     loaderSubName: 'Suma & Naresh · ಸುಮಾ & ನರೇಶ್',
@@ -392,6 +406,13 @@ const translations = {
     footerDate: '10 · 05 · 2026',
     footerQuote: '"ಎರಡು ಆತ್ಮಗಳು ಒಂದೇ ಆಲೋಚನೆಯೊಂದಿಗೆ,\nಎರಡು ಹೃದಯಗಳು ಒಂದೇ ತರಹ ತಡಕಾಡುತ್ತವೆ."',
     footerMadeWith: 'ಸುಮಾ & ನರೇಶ್ ಮದುವೆಗಾಗಿ ❤️ ಜೊತೆ ನಿರ್ಮಿಸಲಾಗಿದೆ',
+
+    // Music
+    musicLoading: 'ಮೆಲಡಿ ಲೋಡ್ ಆಗುತ್ತಿದೆ',
+    musicOn: 'ಮೆಲಡಿ ಆನ್',
+    musicOff: 'ಮೆಲಡಿ ಆಫ್',
+    musicPlayLabel: 'ಹಿನ್ನೆಲೆ ಮೆಲಡಿಯನ್ನು ಚಾಲನೆ ಮಾಡಿ',
+    musicPauseLabel: 'ಹಿನ್ನೆಲೆ ಮೆಲಡಿಯನ್ನು ನಿಲ್ಲಿಸಿ',
 
     // Loader
     loaderName: 'ಸುಮಾ & ನರೇಶ್',

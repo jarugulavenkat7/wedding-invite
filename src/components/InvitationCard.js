@@ -119,47 +119,6 @@ const InvitationCard = () => {
             </p>
           </div>
         </motion.div>
-
-        {/* Wedding Invitation Image */}
-        <motion.div
-          className="invitation-image-wrapper"
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 1.4, duration: 0.6 }}
-        >
-          <img
-            src={`${process.env.PUBLIC_URL}/wedding-invitation.jpg`}
-            alt={t.invitationImageAlt}
-            className="invitation-image"
-            onError={(e) => {
-              e.target.style.display = 'none';
-              e.target.nextSibling.style.display = 'flex';
-            }}
-          />
-          <div
-            style={{
-              display: 'none',
-              flexDirection: 'column',
-              alignItems: 'center',
-              padding: '3rem 2rem',
-              background: 'linear-gradient(135deg, #FFF5E6, #FFE8CC)',
-              border: '2px dashed #D4A843',
-              borderRadius: '8px',
-              marginTop: '1rem',
-            }}
-          >
-            <span style={{ fontSize: '4rem', marginBottom: '1rem' }}>💍</span>
-            <p style={{ color: '#8B1A1A', fontFamily: "'Playfair Display', serif", fontSize: '1.2rem' }}>
-              {t.invitationImagePlaceholder}
-            </p>
-            <p style={{ color: '#B8A898', fontSize: '0.9rem', marginTop: '0.5rem' }}>
-              {t.invitationImageHint}<br />
-              <code style={{ background: '#FFF', padding: '2px 8px', borderRadius: '4px' }}>
-                public/wedding-invitation.jpg
-              </code>
-            </p>
-          </div>
-        </motion.div>
       </motion.div>
     </section>
   );

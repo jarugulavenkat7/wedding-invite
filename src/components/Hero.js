@@ -5,7 +5,7 @@ import useT from '../useT';
 const Hero = () => {
   const t = useT();
   // Countdown to wedding date
-  const weddingDate = new Date('2026-06-15T09:00:00');
+  const weddingDate = new Date('2026-05-10T09:02:00');
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
 
   function getTimeLeft() {

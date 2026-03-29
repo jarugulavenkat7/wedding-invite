@@ -27,7 +27,6 @@ const Navbar = () => {
     { href: '#invitation', label: t.navInvitation },
     { href: '#events', label: t.navEvents },
     { href: '#venue', label: t.navVenue },
-    { href: '#gallery', label: t.navGallery },
     { href: '#rsvp', label: t.navRsvp },
   ];
 

@@ -590,38 +590,6 @@ body {
   color: var(--deep-maroon);
 }
 
-/* ============ GALLERY ============ */
-.gallery-section {
-  padding: 5rem 2rem;
-  background: var(--warm-white);
-  text-align: center;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.gallery-item {
-  aspect-ratio: 1;
-  overflow: hidden;
-  border: 2px solid var(--gold);
-  position: relative;
-}
-
-.gallery-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #FFF5E6, #FFE8CC);
-  font-size: 3rem;
-}
-
 /* ============ RSVP ============ */
 .rsvp-section {
   padding: 5rem 2rem;
@@ -824,10 +792,6 @@ body {
 
   .events-grid {
     grid-template-columns: 1fr;
-  }
-
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .countdown {

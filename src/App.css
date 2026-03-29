@@ -1,0 +1,952 @@
+/* ============================================
+   SUMA WEDS NARESH — South Indian Wedding Site
+   ============================================ */
+
+:root {
+  --maroon: #8B1A1A;
+  --deep-maroon: #5C0A0A;
+  --gold: #D4A843;
+  --light-gold: #F0D68A;
+  --cream: #FFF8F0;
+  --warm-white: #FFFDF7;
+  --dark: #2C1810;
+  --text: #3D2B1F;
+  --accent-green: #2D5016;
+  --temple-red: #C0392B;
+  --turmeric: #E6A817;
+  --kolam-gray: #B8A898;
+}
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background: var(--cream);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+.app {
+  overflow-x: hidden;
+}
+
+/* ============ LOADER ============ */
+.loader-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--maroon) 0%, var(--deep-maroon) 100%);
+  z-index: 9999;
+}
+
+.loader-om {
+  font-size: 4rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.loader-text {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: var(--light-gold);
+  letter-spacing: 2px;
+}
+
+.loader-text-telugu {
+  font-family: 'Noto Sans Telugu', 'Noto Sans Kannada', sans-serif;
+  font-size: 1.2rem;
+  color: var(--light-gold);
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+.loader-mandala {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 2rem;
+  opacity: 0.6;
+}
+
+/* ============ NAVBAR ============ */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(139, 26, 26, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 0.6rem 2rem;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--light-gold);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--light-gold);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ============ HERO ============ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    var(--deep-maroon) 0%,
+    var(--maroon) 40%,
+    #A0522D 100%
+  );
+  text-align: center;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(212, 168, 67, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(212, 168, 67, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero-kolam {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+.hero-kolam.top-left {
+  top: -50px;
+  left: -50px;
+}
+
+.hero-kolam.bottom-right {
+  bottom: -50px;
+  right: -50px;
+}
+
+.hero-mango-leaves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  overflow: hidden;
+}
+
+.mango-leaf {
+  color: var(--accent-green);
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+.hero-auspicious {
+  font-family: 'Noto Sans Telugu', 'Noto Sans Kannada', sans-serif;
+  font-size: 1rem;
+  color: var(--light-gold);
+  letter-spacing: 4px;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.hero-om {
+  font-size: 3rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  text-shadow: 0 0 30px rgba(212, 168, 67, 0.3);
+}
+
+.hero-subtitle-top {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: var(--light-gold);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.hero-names {
+  font-family: 'Great Vibes', cursive;
+  font-size: 5rem;
+  color: var(--gold);
+  line-height: 1.2;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0.5rem;
+}
+
+.hero-ampersand {
+  display: block;
+  font-size: 3rem;
+  color: var(--light-gold);
+  margin: 0.3rem 0;
+}
+
+.hero-date {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--light-gold);
+  letter-spacing: 6px;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+}
+
+.hero-tagline {
+  font-family: 'Noto Sans Telugu', 'Noto Sans Kannada', sans-serif;
+  font-size: 1rem;
+  color: var(--light-gold);
+  opacity: 0.7;
+  margin-top: 0.5rem;
+}
+
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.scroll-text {
+  font-size: 0.8rem;
+  color: var(--light-gold);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.scroll-arrow {
+  font-size: 1.5rem;
+  color: var(--gold);
+}
+
+/* Decorative border for hero */
+.hero-border {
+  position: absolute;
+  inset: 15px;
+  border: 1px solid rgba(212, 168, 67, 0.2);
+  border-radius: 0;
+  pointer-events: none;
+}
+
+.hero-border-inner {
+  position: absolute;
+  inset: 25px;
+  border: 1px solid rgba(212, 168, 67, 0.1);
+  pointer-events: none;
+}
+
+/* ============ FLORAL DIVIDER ============ */
+.floral-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.floral-divider .line {
+  height: 1px;
+  width: 100px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.floral-divider .ornament {
+  font-size: 1.5rem;
+  color: var(--gold);
+  opacity: 0.7;
+}
+
+/* ============ INVITATION CARD ============ */
+.invitation-section {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--warm-white);
+}
+
+.invitation-card {
+  max-width: 700px;
+  width: 100%;
+  background: linear-gradient(135deg, #FFFEF5 0%, #FFF5E6 100%);
+  border: 3px solid var(--gold);
+  border-radius: 0;
+  padding: 3rem 2.5rem;
+  position: relative;
+  box-shadow: 
+    0 0 0 1px var(--gold),
+    0 0 0 5px var(--cream),
+    0 0 0 6px var(--gold),
+    0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.invitation-card::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(212, 168, 67, 0.3);
+  pointer-events: none;
+}
+
+.invitation-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.invitation-om {
+  font-size: 2.5rem;
+  color: var(--maroon);
+  margin-bottom: 0.5rem;
+}
+
+.invitation-telugu-text {
+  font-family: 'Noto Sans Telugu', 'Noto Sans Kannada', sans-serif;
+  font-size: 1rem;
+  color: var(--maroon);
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.invitation-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--maroon);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.invitation-body {
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 2;
+  color: var(--text);
+}
+
+.invitation-body .parents {
+  font-weight: 600;
+  color: var(--dark);
+  font-size: 1.1rem;
+}
+
+.invitation-body .couple-names {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
+  color: var(--maroon);
+  display: block;
+  margin: 1rem 0;
+  line-height: 1.4;
+}
+
+.invitation-body .detail-line {
+  font-size: 1.1rem;
+  margin: 0.3rem 0;
+}
+
+.invitation-body .highlight {
+  color: var(--maroon);
+  font-weight: 700;
+}
+
+.invitation-image-wrapper {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.invitation-image {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid var(--gold);
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Corner ornaments for invitation */
+.corner-ornament {
+  position: absolute;
+  font-size: 2rem;
+  color: var(--gold);
+  opacity: 0.5;
+}
+
+.corner-ornament.top-left { top: 12px; left: 12px; }
+.corner-ornament.top-right { top: 12px; right: 12px; transform: scaleX(-1); }
+.corner-ornament.bottom-left { bottom: 12px; left: 12px; transform: scaleY(-1); }
+.corner-ornament.bottom-right { bottom: 12px; right: 12px; transform: scale(-1); }
+
+/* ============ EVENT DETAILS ============ */
+.events-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, var(--cream) 0%, var(--warm-white) 100%);
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--maroon);
+  letter-spacing: 3px;
+  margin-bottom: 0.5rem;
+}
+
+.section-title-telugu {
+  font-family: 'Noto Sans Telugu', 'Noto Sans Kannada', sans-serif;
+  font-size: 1rem;
+  color: var(--gold);
+  margin-bottom: 2rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.event-card {
+  background: var(--warm-white);
+  border: 2px solid var(--gold);
+  padding: 2.5rem 2rem;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(139, 26, 26, 0.15);
+}
+
+.event-card::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border: 1px solid rgba(212, 168, 67, 0.2);
+  pointer-events: none;
+}
+
+.event-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.event-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: var(--maroon);
+  margin-bottom: 0.3rem;
+}
+
+.event-name-telugu {
+  font-family: 'Noto Sans Telugu', 'Noto Sans Kannada', sans-serif;
+  font-size: 0.9rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.event-date,
+.event-time,
+.event-venue {
+  font-size: 1.05rem;
+  margin: 0.3rem 0;
+  color: var(--text);
+}
+
+.event-date .label,
+.event-time .label,
+.event-venue .label {
+  font-weight: 700;
+  color: var(--maroon);
+}
+
+/* ============ VENUE ============ */
+.venue-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, var(--maroon) 0%, var(--deep-maroon) 100%);
+  text-align: center;
+  color: var(--light-gold);
+}
+
+.venue-section .section-title {
+  color: var(--gold);
+}
+
+.venue-section .section-title-telugu {
+  color: var(--light-gold);
+  opacity: 0.7;
+}
+
+.venue-info {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.venue-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.venue-address {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.venue-map-link {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: transparent;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.venue-map-link:hover {
+  background: var(--gold);
+  color: var(--deep-maroon);
+}
+
+/* ============ GALLERY ============ */
+.gallery-section {
+  padding: 5rem 2rem;
+  background: var(--warm-white);
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 2px solid var(--gold);
+  position: relative;
+}
+
+.gallery-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #FFF5E6, #FFE8CC);
+  font-size: 3rem;
+}
+
+/* ============ RSVP ============ */
+.rsvp-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, var(--cream) 0%, #F5E6D3 100%);
+  text-align: center;
+}
+
+.rsvp-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.rsvp-message {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.rsvp-btn {
+  display: inline-block;
+  padding: 1.2rem 3rem;
+  background: var(--maroon);
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid var(--gold);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.rsvp-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(212, 168, 67, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.rsvp-btn:hover::before {
+  left: 100%;
+}
+
+.rsvp-btn:hover {
+  background: var(--gold);
+  color: var(--deep-maroon);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(139, 26, 26, 0.3);
+}
+
+.rsvp-note {
+  font-size: 0.95rem;
+  color: var(--kolam-gray);
+  margin-top: 1.5rem;
+  font-style: italic;
+}
+
+/* ============ FOOTER ============ */
+.footer {
+  padding: 3rem 2rem;
+  background: var(--deep-maroon);
+  text-align: center;
+  color: var(--light-gold);
+}
+
+.footer-names {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.footer-date {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.footer-message {
+  font-style: italic;
+  opacity: 0.6;
+  font-size: 0.95rem;
+}
+
+.footer-divider {
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+  margin: 1.5rem auto;
+  opacity: 0.4;
+}
+
+/* ============ COUNTDOWN ============ */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.countdown-label {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--light-gold);
+  opacity: 0.7;
+  margin-top: 0.3rem;
+}
+
+/* ============ FLOATING PETALS ============ */
+.petal {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  font-size: 1.5rem;
+  opacity: 0.3;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.mobile-open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(92, 10, 10, 0.98);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 1001;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    z-index: 1002;
+    position: relative;
+  }
+
+  .hero-names {
+    font-size: 3rem;
+  }
+
+  .hero-om {
+    font-size: 2rem;
+  }
+
+  .hero-date {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+  }
+
+  .hero-subtitle-top {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .invitation-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .invitation-body .couple-names {
+    font-size: 2rem;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .countdown {
+    gap: 1rem;
+  }
+
+  .countdown-number {
+    font-size: 2rem;
+  }
+
+  .venue-name {
+    font-size: 1.5rem;
+  }
+
+  .loader-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-names {
+    font-size: 2.5rem;
+  }
+
+  .invitation-body .couple-names {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .rsvp-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+}
+
+/* ============ KOLAM PATTERN SVG BG ============ */
+.kolam-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: 
+    radial-gradient(circle, var(--gold) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Smooth scroll offset for fixed navbar */
+section {
+  scroll-margin-top: 60px;
+}
+
+/* ============ LANGUAGE TOGGLE ============ */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(212, 168, 67, 0.15);
+  border: 1px solid var(--gold);
+  border-radius: 20px;
+  padding: 4px;
+  transition: all 0.3s ease;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.lang-toggle:hover {
+  background: rgba(212, 168, 67, 0.3);
+}
+
+.lang-toggle.desktop {
+  display: flex;
+}
+
+.lang-toggle.mobile {
+  display: none;
+}
+
+.lang-option {
+  border: none;
+  background: transparent;
+  padding: 0.35rem 0.6rem;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--light-gold);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-family: 'Noto Sans Telugu', 'Noto Sans Kannada', 'Cormorant Garamond', sans-serif;
+}
+
+.lang-option.active {
+  opacity: 1;
+  color: var(--gold);
+  background: rgba(212, 168, 67, 0.18);
+  text-shadow: 0 0 8px rgba(212, 168, 67, 0.4);
+}
+
+@media (max-width: 768px) {
+  .lang-toggle.desktop {
+    display: none;
+  }
+
+  .lang-toggle.mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1002;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+}

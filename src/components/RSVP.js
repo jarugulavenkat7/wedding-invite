@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import useT from '../useT';
 
 // REPLACE THIS with your actual Google Form URL
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform';
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdzmsfsDKuuzgeVlL-NphFN_4mPokADKt1yoBz63eAsvKGSLg/viewform?usp=dialog';
 
 const RSVP = () => {
   const t = useT();

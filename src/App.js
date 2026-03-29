@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import InvitationCard from './components/InvitationCard';
 import EventDetails from './components/EventDetails';
 import Venue from './components/Venue';
-import Gallery from './components/Gallery';
 import RSVP from './components/RSVP';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -42,8 +41,6 @@ function App() {
             <EventDetails />
             <FloralDivider />
             <Venue />
-            <FloralDivider />
-            <Gallery />
             <FloralDivider />
             <RSVP />
             <Footer />

@@ -33,7 +33,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          PUBLIC_URL: /sumawedsnaresh
+          PUBLIC_URL: /wedding-invite
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

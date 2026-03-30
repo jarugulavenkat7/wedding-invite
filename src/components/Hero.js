@@ -111,7 +111,7 @@ const Hero = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.3, duration: 0.8, type: 'spring' }}
       >
-        🕉️
+        
       </motion.div>
 
       <motion.div

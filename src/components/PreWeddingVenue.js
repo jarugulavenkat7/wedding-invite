@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import useT from '../useT';
 
-const Venue = () => {
+const PreWeddingVenue = () => {
   const t = useT();
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -22,7 +22,7 @@ const Venue = () => {
   return (
     <motion.section
       className="venue-section"
-      id="venue"
+      id="pre-wedding-venue"
       ref={ref}
       initial="hidden"
       whileInView="visible"
@@ -35,7 +35,7 @@ const Venue = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        {t.venueTitle}
+        {t.preVenueTitle}
       </motion.h2>
       <motion.p
         className="section-title-telugu"
@@ -43,7 +43,7 @@ const Venue = () => {
         animate={inView ? { opacity: 1 } : {}}
         transition={{ delay: 0.2 }}
       >
-        {t.venueSubtitle}
+        {t.preVenueSubtitle}
       </motion.p>
 
       <motion.div
@@ -52,14 +52,13 @@ const Venue = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ delay: 0.4, duration: 0.8 }}
       >
-        <h3 className="venue-name">{t.venueName}</h3>
+        <h3 className="venue-name">{t.preVenueName}</h3>
         <p className="venue-address">
-          {t.venueAddr1}<br />
-          {t.venueAddr2}<br />
-          {t.venueAddr3}
+          {t.preVenueAddr1}<br />
+          {t.preVenueAddr2}<br />
+          {t.preVenueAddr3}
         </p>
 
-        {/* Embedded map placeholder */}
         <motion.div
           style={{
             width: '100%',
@@ -75,8 +74,8 @@ const Venue = () => {
           transition={{ delay: 0.6 }}
         >
           <iframe
-            title="Wedding Venue Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d835.2091203808017!2d-96.79603094!3d33.0973419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c3decf9d15029%3A0xbb6286684caa24dc!2sElegance%20Ballroom%20%26%20Event%20Center!5e0!3m2!1sen!2sus!4v1"
+            title="Pre-Wedding Venue Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.0!2d-96.5476161!3d33.2236629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c0d0867889379%3A0x90d33fbb9ee65c3b!2s2621+FM1827%2C+McKinney%2C+TX+75071!5e0!3m2!1sen!2sus!4v1"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -87,18 +86,18 @@ const Venue = () => {
         </motion.div>
 
         <motion.a
-          href="https://www.google.com/maps/place/Elegance+Ballroom+%26+Event+Center/@33.0977602,-96.7952066,17z"
+          href="https://www.google.com/maps/place/2621+FM1827,+McKinney,+TX+75071/@33.2236629,-96.5476161,17z"
           target="_blank"
           rel="noopener noreferrer"
           className="venue-map-link"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          {t.venueDirections}
+          {t.preVenueDirections}
         </motion.a>
       </motion.div>
     </motion.section>
   );
 };
 
-export default Venue;
+export default PreWeddingVenue;

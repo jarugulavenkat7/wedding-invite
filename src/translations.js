@@ -3,6 +3,7 @@ const translations = {
     // Navbar
     navInvitation: 'Invitation',
     navEvents: 'Events',
+    navPreVenue: 'Pre-Wedding',
     navVenue: 'Venue',
     navGallery: 'Gallery',
     navRsvp: 'RSVP',
@@ -95,14 +96,23 @@ const translations = {
       },
     ],
 
+    // Pre-Wedding Venue
+    preVenueTitle: 'Pre-Wedding Venue',
+    preVenueSubtitle: 'వివాహ పూర్వ వేడుకల వేదిక',
+    preVenueName: 'Ranch @McKinney',
+    preVenueAddr1: '2621 FM1827,',
+    preVenueAddr2: 'McKinney, TX 75071',
+    preVenueAddr3: 'United States',
+    preVenueDirections: 'Get Directions',
+
     // Venue
     venueTitle: 'Wedding Venue',
     venueSubtitle: 'కళ్యాణ మండపం',
-    venueName: '🏛️ Elegance Ballroom & Event Center',
+    venueName: 'Elegance Ballroom & Event Center',
     venueAddr1: '8740 Ohio Dr A1,',
     venueAddr2: 'Plano, TX 75024',
     venueAddr3: 'United States',
-    venueDirections: '📍 Get Directions',
+    venueDirections: 'Get Directions',
 
     // Gallery
     galleryTitle: 'Moments of Joy',
@@ -151,6 +161,7 @@ const translations = {
     // Navbar
     navInvitation: 'శుభలేఖ',
     navEvents: 'వేడుకలు',
+    navPreVenue: 'పూర్వ వేదిక',
     navVenue: 'వేదిక',
     navGallery: 'గ్యాలరీ',
     navRsvp: 'RSVP',
@@ -243,14 +254,23 @@ const translations = {
       },
     ],
 
+    // Pre-Wedding Venue
+    preVenueTitle: 'వివాహ పూర్వ వేడుకల వేదిక',
+    preVenueSubtitle: 'ముందస్తు వేడుకలు',
+    preVenueName: 'రాంచ్ @మక్కిన్నే',
+    preVenueAddr1: '2621 FM1827,',
+    preVenueAddr2: 'McKinney, TX 75071',
+    preVenueAddr3: 'అమెరికా (USA)',
+    preVenueDirections: 'దారి తెలుసుకోండి',
+
     // Venue
     venueTitle: 'వివాహ వేదిక',
     venueSubtitle: 'కళ్యాణ వేదిక',
-    venueName: '🏛️ ఎలిగాన్స్ బాల్‌రూమ్ & ఈవెంట్ సెంటర్',
+    venueName: 'ఎలిగాన్స్ బాల్‌రూమ్ & ఈవెంట్ సెంటర్',
     venueAddr1: '8740 Ohio Dr A1,',
     venueAddr2: 'Plano, TX 75024',
     venueAddr3: 'అమెరికా (USA)',
-    venueDirections: '📍 దారి తెలుసుకోండి',
+    venueDirections: 'దారి తెలుసుకోండి',
 
     // Gallery
     galleryTitle: 'ఆనందపు క్షణాలు',
@@ -299,6 +319,7 @@ const translations = {
     // Navbar
     navInvitation: 'ಆಮಂತ್ರಣ',
     navEvents: 'ಕಾರ್ಯಕ್ರಮಗಳು',
+    navPreVenue: 'ಪೂರ್ವ ಸ್ಥಳ',
     navVenue: 'ಸ್ಥಳ',
     navGallery: 'ಗ್ಯಾಲರಿ',
     navRsvp: 'RSVP',
@@ -391,14 +412,23 @@ const translations = {
       },
     ],
 
+    // Pre-Wedding Venue
+    preVenueTitle: 'ಮದುವೆ ಪೂರ್ವ ಕಾರ್ಯಕ್ರಮದ ಸ್ಥಳ',
+    preVenueSubtitle: 'ಮುನ್ನ ಹಬ್ಬಗಳ ವೇದಿಕೆ',
+    preVenueName: 'Ranch @McKinney',
+    preVenueAddr1: '2621 FM1827,',
+    preVenueAddr2: 'McKinney, TX 75071',
+    preVenueAddr3: 'United States',
+    preVenueDirections: 'ಮಾರ್ಗ ತಿಳಿದುಕೊಳ್ಳಿ',
+
     // Venue
     venueTitle: 'ಮದುವೆ ಸ್ಥಳ',
     venueSubtitle: 'ಕಲ್ಯಾಣ ಮಂಟಪ',
-    venueName: '🏛️ ಎಲಿಗಾನ್ಸ್ ಬಾಲ್ ರೂಮ್ & ಈವೆಂಟ್ ಸೆಂಟರ್',
+    venueName: 'ಎಲಿಗಾನ್ಸ್ ಬಾಲ್ ರೂಮ್ & ಈವೆಂಟ್ ಸೆಂಟರ್',
     venueAddr1: '8740 Ohio Dr A1,',
     venueAddr2: 'Plano, TX 75024',
     venueAddr3: 'United States',
-    venueDirections: '📍 ಮಾರ್ಗ ತಿಳಿದುಕೊಳ್ಳಿ',
+    venueDirections: 'ಮಾರ್ಗ ತಿಳಿದುಕೊಳ್ಳಿ',
 
     // Gallery
     galleryTitle: 'ಆನಂದದ ಕ್ಷಣಗಳು',

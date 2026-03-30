@@ -1,21 +1,55 @@
-import React, { useState, useEffect } from 'react';
+import React, { memo, useEffect, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import useT from '../useT';
+
+const PETAL_EMOJIS = ['🌸', '🪷', '🌺', '💐', '🌼'];
+
+const FloatingPetals = memo(() => {
+  const petalConfigs = useMemo(
+    () => Array.from({ length: 12 }, (_, i) => ({
+      id: i,
+      left: `${Math.random() * 100}%`,
+      duration: 8 + Math.random() * 6,
+      delay: Math.random() * 8,
+      drift: Math.sin(i) * 80,
+      rotate: 360 * (i % 2 === 0 ? 1 : -1),
+      emoji: PETAL_EMOJIS[i % PETAL_EMOJIS.length],
+    })),
+    [],
+  );
+
+  return petalConfigs.map((petal) => (
+    <motion.div
+      key={petal.id}
+      className="petal"
+      style={{
+        left: petal.left,
+        top: '-5%',
+        position: 'absolute',
+      }}
+      animate={{
+        y: ['0vh', '110vh'],
+        x: [0, petal.drift],
+        rotate: [0, petal.rotate],
+        opacity: [0, 0.5, 0.3, 0],
+      }}
+      transition={{
+        duration: petal.duration,
+        repeat: Infinity,
+        delay: petal.delay,
+        ease: 'linear',
+      }}
+    >
+      {petal.emoji}
+    </motion.div>
+  ));
+});
 
 const Hero = () => {
   const t = useT();
   // Countdown to wedding date
   const weddingDate = new Date('2026-05-10T09:02:00');
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
-
-  const sectionVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: 'easeOut' },
-    },
-  };
 
   function getTimeLeft() {
     const now = new Date();
@@ -35,49 +69,15 @@ const Hero = () => {
     // eslint-disable-next-line
   }, []);
 
-  // Floating petal animation
-  const petals = ['🌸', '🪷', '🌺', '💐', '🌼'];
-
   return (
-    <motion.section
-      className="hero"
-      id="home"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.35 }}
-      variants={sectionVariants}
-    >
+    <section className="hero" id="home">
       {/* Decorative borders */}
       <div className="hero-border" />
       <div className="hero-border-inner" />
       <div className="kolam-bg" />
 
       {/* Floating petals */}
-      {[...Array(12)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="petal"
-          style={{
-            left: `${Math.random() * 100}%`,
-            top: `-5%`,
-            position: 'absolute',
-          }}
-          animate={{
-            y: ['0vh', '110vh'],
-            x: [0, Math.sin(i) * 80],
-            rotate: [0, 360 * (i % 2 === 0 ? 1 : -1)],
-            opacity: [0, 0.5, 0.3, 0],
-          }}
-          transition={{
-            duration: 8 + Math.random() * 6,
-            repeat: Infinity,
-            delay: Math.random() * 8,
-            ease: 'linear',
-          }}
-        >
-          {petals[i % petals.length]}
-        </motion.div>
-      ))}
+      <FloatingPetals />
 
       {/* Previous leaf decoration kept here for reference
       <div className="hero-mango-leaves">
@@ -143,21 +143,12 @@ const Hero = () => {
         {t.heroDate}
       </motion.div>
 
-      <motion.div
-        className="hero-tagline"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.7 }}
-        transition={{ delay: 1.6, duration: 0.8 }}
-      >
-        {t.heroTagline}
-      </motion.div>
-
       {/* Countdown */}
       <motion.div
         className="countdown"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.8, duration: 0.8 }}
+        transition={{ delay: 1.6, duration: 0.8 }}
       >
         {[
           { val: timeLeft.days, label: t.days },
@@ -196,7 +187,7 @@ const Hero = () => {
           ↓
         </motion.span>
       </motion.div>
-    </motion.section>
+    </section>
   );
 };
 

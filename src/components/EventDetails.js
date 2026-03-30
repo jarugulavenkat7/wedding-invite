@@ -23,25 +23,8 @@ const EventDetails = () => {
     threshold: 0.1,
   });
 
-  const sectionVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: 'easeOut' },
-    },
-  };
-
   return (
-    <motion.section
-      className="events-section"
-      id="events"
-      ref={ref}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.15 }}
-      variants={sectionVariants}
-    >
+    <section className="events-section" id="events" ref={ref}>
       <motion.h2
         className="section-title"
         initial={{ opacity: 0, y: 30 }}
@@ -70,7 +53,17 @@ const EventDetails = () => {
             animate={inView ? 'visible' : 'hidden'}
             whileHover={{ scale: 1.02 }}
           >
-            <div className="event-icon">{event.icon}</div>
+            <div className="event-icon">
+              {event.iconImage ? (
+                <img
+                  src={`${process.env.PUBLIC_URL}/${event.iconImage}`}
+                  alt={event.name}
+                  className="event-icon-image"
+                />
+              ) : (
+                event.icon
+              )}
+            </div>
             <h3 className="event-name">{event.name}</h3>
             <p className="event-name-telugu">{event.nameSub}</p>
             <p className="event-date">
@@ -85,7 +78,7 @@ const EventDetails = () => {
           </motion.div>
         ))}
       </div>
-    </motion.section>
+    </section>
   );
 };
 

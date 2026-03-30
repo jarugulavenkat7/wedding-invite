@@ -607,6 +607,20 @@ label {
 .event-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.5rem;
+}
+
+.event-icon-image {
+  width: 3.3rem;
+  height: 3.3rem;
+  object-fit: contain;
+  display: block;
+  mix-blend-mode: multiply;
+  filter: contrast(1.08) saturate(1.05) drop-shadow(0 4px 8px rgba(139, 26, 26, 0.16));
+  background: transparent;
 }
 
 .event-name {

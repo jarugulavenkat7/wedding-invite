@@ -14,7 +14,6 @@ const translations = {
     heroName1: 'Sushmitha',
     heroName2: 'Naresh Kumar',
     heroDate: 'Sunday, 10th May 2026 · 9:02 AM',
-    heroTagline: 'రెండు హృదయాలు ఒక్కటయ్యే రోజు ✨',
     days: 'Days',
     hours: 'Hours',
     minutes: 'Minutes',
@@ -87,7 +86,8 @@ const translations = {
         venue: 'Ranch @McKinney',
       },
       {
-        icon: '💒',
+        icon: '🕉️',
+        iconImage: 'image%202.png',
         name: 'Wedding Ceremony',
         nameSub: 'వివాహ వేడుక',
         date: 'Sunday, 10th May 2026',
@@ -123,7 +123,7 @@ const translations = {
       { emoji: '💛', label: 'Haldi' },
       { emoji: '🪔', label: 'Pelli Kuthuru' },
       { emoji: '🎶', label: 'Sangeet' },
-      { emoji: '💒', label: 'Wedding' },
+      { emoji: '🕉️', label: 'Wedding' },
     ],
     galleryHint: '📸 Replace placeholders with your photos in the public/gallery/ folder',
 
@@ -172,7 +172,6 @@ const translations = {
     heroName1: 'సుష్మిత',
     heroName2: 'నరేష్ కుమార్',
     heroDate: 'ఆదివారం, 10 మే 2026 · ఉదయం 9:02',
-    heroTagline: 'రెండు హృదయాలు ఒక్కటయ్యే రోజు ✨',
     days: 'రోజులు',
     hours: 'గంటలు',
     minutes: 'నిమిషాలు',
@@ -245,7 +244,8 @@ const translations = {
         venue: 'రాంచ్ @మక్కిన్నే',
       },
       {
-        icon: '💒',
+        icon: '🕉️',
+        iconImage: 'image%202.png',
         name: 'వివాహ వేడుక',
         nameSub: 'Wedding Ceremony',
         date: 'ఆదివారం, 10 మే 2026',
@@ -266,11 +266,11 @@ const translations = {
     // Venue
     venueTitle: 'వివాహ వేదిక',
     venueSubtitle: 'కళ్యాణ వేదిక',
-    venueName: 'ఎలిగాన్స్ బాల్‌రూమ్ & ఈవెంట్ సెంటర్',
+    venueName: '🏛️ ఎలిగాన్స్ బాల్‌రూమ్ & ఈవెంట్ సెంటర్',
     venueAddr1: '8740 Ohio Dr A1,',
     venueAddr2: 'Plano, TX 75024',
     venueAddr3: 'అమెరికా (USA)',
-    venueDirections: 'దారి తెలుసుకోండి',
+    venueDirections: '📍 దారి తెలుసుకోండి',
 
     // Gallery
     galleryTitle: 'ఆనందపు క్షణాలు',
@@ -281,7 +281,7 @@ const translations = {
       { emoji: '💛', label: 'పసుపు పండుగ' },
       { emoji: '🪔', label: 'పెళ్ళి కూతురు' },
       { emoji: '🎶', label: 'సంగీత్' },
-      { emoji: '💒', label: 'వివాహం' },
+      { emoji: '🕉️', label: 'వివాహం' },
     ],
     galleryHint: '📸 మీ ఫోటోలను public/gallery/ ఫోల్డర్‌లో ఉంచండి',
 
@@ -330,7 +330,6 @@ const translations = {
     heroName1: 'ಸುಷ್ಮಿತಾ',
     heroName2: 'ನರೇಶ್ ಕುಮಾರ್',
     heroDate: 'ಭಾನುವಾರ, 10 ಮೇ 2026 · ಬೆಳಿಗ್ಗೆ 9:02',
-    heroTagline: 'ಎರಡು ಹೃದಯಗಳು ಒಂದಾಗುವ ದಿನ ✨',
     days: 'ದಿನಗಳು',
     hours: 'ಗಂಟೆಗಳು',
     minutes: 'ನಿಮಿಷಗಳು',
@@ -403,7 +402,8 @@ const translations = {
         venue: 'ರಾಂಚ್ @ಮೆಕ್ಕಿನ್ನಿ',
       },
       {
-        icon: '💒',
+        icon: '🕉️',
+        iconImage: 'image%202.png',
         name: 'ಮದುವೆ ಸಮಾರಂಭ',
         nameSub: 'Wedding Ceremony',
         date: 'ಭಾನುವಾರ, 10 ಮೇ 2026',
@@ -411,6 +411,7 @@ const translations = {
         venue: 'ಎಲಿಗಾನ್ಸ್ ಬಾಲ್ ರೂಮ್ & ಈವೆಂಟ್ ಸೆಂಟರ್',
       },
     ],
+    
 
     // Pre-Wedding Venue
     preVenueTitle: 'ಮದುವೆ ಪೂರ್ವ ಕಾರ್ಯಕ್ರಮದ ಸ್ಥಳ',
@@ -424,11 +425,11 @@ const translations = {
     // Venue
     venueTitle: 'ಮದುವೆ ಸ್ಥಳ',
     venueSubtitle: 'ಕಲ್ಯಾಣ ಮಂಟಪ',
-    venueName: 'ಎಲಿಗಾನ್ಸ್ ಬಾಲ್ ರೂಮ್ & ಈವೆಂಟ್ ಸೆಂಟರ್',
+    venueName: '🏛️ ಎಲಿಗಾನ್ಸ್ ಬಾಲ್ ರೂಮ್ & ಈವೆಂಟ್ ಸೆಂಟರ್',
     venueAddr1: '8740 Ohio Dr A1,',
     venueAddr2: 'Plano, TX 75024',
     venueAddr3: 'United States',
-    venueDirections: 'ಮಾರ್ಗ ತಿಳಿದುಕೊಳ್ಳಿ',
+    venueDirections: '📍 ಮಾರ್ಗ ತಿಳಿದುಕೊಳ್ಳಿ',
 
     // Gallery
     galleryTitle: 'ಆನಂದದ ಕ್ಷಣಗಳು',
@@ -439,7 +440,7 @@ const translations = {
       { emoji: '💛', label: 'ಹಲದಿ' },
       { emoji: '🪔', label: 'ಮದುವೆ ಸಮಾರಂಭ' },
       { emoji: '🎶', label: 'ಸಂಗೀತ್' },
-      { emoji: '💒', label: 'ಮದುವೆ' },
+      { emoji: '🕉️', label: 'ಮದುವೆ' },
     ],
     galleryHint: '📸 ನಿಮ್ಮ ಫೋಟೋಗಳನ್ನು public/gallery/ ಫೋಲ್ಡರ್‌ನಲ್ಲಿ ಇಡಿ',
 

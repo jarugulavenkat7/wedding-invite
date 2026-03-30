@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import useT from '../useT';
 
+const WEDDING_VENUE_QUERY = encodeURIComponent('Elegance Ballroom & Event Center, 8740 Ohio Dr A1, Plano, TX 75024');
+
 const Venue = () => {
   const t = useT();
   const [ref, inView] = useInView({
@@ -10,25 +12,8 @@ const Venue = () => {
     threshold: 0.2,
   });
 
-  const sectionVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: 'easeOut' },
-    },
-  };
-
   return (
-    <motion.section
-      className="venue-section"
-      id="venue"
-      ref={ref}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-      variants={sectionVariants}
-    >
+    <section className="venue-section" id="venue" ref={ref}>
       <motion.h2
         className="section-title"
         initial={{ opacity: 0, y: 30 }}
@@ -87,7 +72,7 @@ const Venue = () => {
         </motion.div>
 
         <motion.a
-          href="https://www.google.com/maps/place/Elegance+Ballroom+%26+Event+Center/@33.0977602,-96.7952066,17z"
+          href={`https://www.google.com/maps/dir/?api=1&destination=${WEDDING_VENUE_QUERY}`}
           target="_blank"
           rel="noopener noreferrer"
           className="venue-map-link"
@@ -97,7 +82,7 @@ const Venue = () => {
           {t.venueDirections}
         </motion.a>
       </motion.div>
-    </motion.section>
+    </section>
   );
 };
 

@@ -11,38 +11,39 @@ const Loader = () => {
       exit={{ opacity: 0, scale: 1.1 }}
       transition={{ duration: 0.6 }}
     >
-      {/* Rotating mandala */}
+      {/* Animated Ganesha / Om */}
       <motion.div
-        className="loader-mandala"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
+        className="loader-ganapati"
+        style={{ width: '120px', height: '120px', marginBottom: '1rem', marginTop: '-2rem' }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" stroke="#D4A843" strokeWidth="1" opacity="0.6">
-            <circle cx="100" cy="100" r="90" />
-            <circle cx="100" cy="100" r="75" />
-            <circle cx="100" cy="100" r="60" />
-            <circle cx="100" cy="100" r="45" />
-            <circle cx="100" cy="100" r="30" />
-            {[...Array(12)].map((_, i) => {
-              const angle = (i * 30 * Math.PI) / 180;
-              return (
-                <line
-                  key={i}
-                  x1={100 + 30 * Math.cos(angle)}
-                  y1={100 + 30 * Math.sin(angle)}
-                  x2={100 + 90 * Math.cos(angle)}
-                  y2={100 + 90 * Math.sin(angle)}
-                />
-              );
-            })}
-            {[...Array(8)].map((_, i) => {
-              const angle = (i * 45 * Math.PI) / 180;
-              const cx = 100 + 52 * Math.cos(angle);
-              const cy = 100 + 52 * Math.sin(angle);
-              return <circle key={`d-${i}`} cx={cx} cy={cy} r="8" />;
-            })}
-          </g>
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" stroke="#D4A843" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+          <motion.path
+            d="M 25,30 C 50,10 70,30 45,48 C 75,65 50,95 25,75"
+            initial={{ pathLength: 0 }}
+            animate={{ pathLength: 1 }}
+            transition={{ duration: 2, ease: "easeInOut", repeat: Infinity, repeatType: "reverse" }}
+          />
+          <motion.path
+            d="M 45,48 C 45,48 85,50 85,75 C 85,90 65,95 60,85 C 55,75 68,75 72,78"
+            initial={{ pathLength: 0 }}
+            animate={{ pathLength: 1 }}
+            transition={{ duration: 2, ease: "easeInOut", delay: 0.5, repeat: Infinity, repeatType: "reverse" }}
+          />
+          <motion.path
+            d="M 65,30 C 80,30 90,15 75,10"
+            initial={{ pathLength: 0 }}
+            animate={{ pathLength: 1 }}
+            transition={{ duration: 1.5, ease: "easeInOut", delay: 1, repeat: Infinity, repeatType: "reverse" }}
+          />
+          <motion.circle
+            cx="50" cy="15" r="3" fill="#D4A843" stroke="none"
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1, delay: 1.5, repeat: Infinity, repeatType: "reverse" }}
+          />
         </svg>
       </motion.div>
 
@@ -52,7 +53,7 @@ const Loader = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        🙏
+        
       </motion.div>
 
       <motion.div

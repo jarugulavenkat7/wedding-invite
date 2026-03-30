@@ -58,7 +58,7 @@ const InvitationCard = () => {
             animate={inView ? { opacity: 1 } : {}}
             transition={{ delay: 0.3 }}
           >
-            🙏🕉️🙏
+            
           </motion.div>
 
           <motion.p

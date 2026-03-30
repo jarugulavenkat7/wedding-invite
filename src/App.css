@@ -113,7 +113,7 @@ label {
 }
 
 .loader-text-telugu {
-  font-family: 'Noto Sans Telugu', 'Noto Sans Kannada', sans-serif;
+  font-family: 'Sirivennela', 'Noto Sans Kannada', sans-serif;
   font-size: 1.2rem;
   color: var(--light-gold);
   opacity: 0.8;
@@ -278,6 +278,7 @@ label {
   );
   text-align: center;
   padding: 2rem;
+  padding-bottom: 6rem;
   overflow: hidden;
 }
 
@@ -330,7 +331,7 @@ label {
 */
 
 .hero-auspicious {
-  font-family: 'Noto Sans Telugu', 'Noto Sans Kannada', sans-serif;
+  font-family: 'Sirivennela', 'Noto Sans Kannada', sans-serif;
   font-size: 1rem;
   color: var(--light-gold);
   letter-spacing: 4px;
@@ -381,7 +382,7 @@ label {
 }
 
 .hero-tagline {
-  font-family: 'Noto Sans Telugu', 'Noto Sans Kannada', sans-serif;
+  font-family: 'Sirivennela', 'Noto Sans Kannada', sans-serif;
   font-size: 1rem;
   color: var(--light-gold);
   opacity: 0.7;
@@ -492,7 +493,7 @@ label {
 }
 
 .invitation-telugu-text {
-  font-family: 'Noto Sans Telugu', 'Noto Sans Kannada', sans-serif;
+  font-family: 'Sirivennela', 'Noto Sans Kannada', sans-serif;
   font-size: 1rem;
   color: var(--maroon);
   opacity: 0.8;
@@ -568,7 +569,7 @@ label {
 }
 
 .section-title-telugu {
-  font-family: 'Noto Sans Telugu', 'Noto Sans Kannada', sans-serif;
+  font-family: 'Sirivennela', 'Noto Sans Kannada', sans-serif;
   font-size: 1rem;
   color: var(--gold);
   margin-bottom: 2rem;
@@ -630,7 +631,7 @@ label {
 }
 
 .event-name-telugu {
-  font-family: 'Noto Sans Telugu', 'Noto Sans Kannada', sans-serif;
+  font-family: 'Sirivennela', 'Noto Sans Kannada', sans-serif;
   font-size: 0.9rem;
   color: var(--gold);
   margin-bottom: 1rem;
@@ -1039,7 +1040,7 @@ section {
   transition: all 0.3s ease;
   letter-spacing: 1px;
   cursor: pointer;
-  font-family: 'Noto Sans Telugu', 'Noto Sans Kannada', 'Cormorant Garamond', sans-serif;
+  font-family: 'Sirivennela', 'Noto Sans Kannada', 'Cormorant Garamond', sans-serif;
 }
 
 .lang-option.active {

@@ -67,13 +67,13 @@ const EventDetails = () => {
             <h3 className="event-name">{event.name}</h3>
             <p className="event-name-telugu">{event.nameSub}</p>
             <p className="event-date">
-              <span className="label">📅 </span>{event.date}
+              <span className="label"></span>{event.date}
             </p>
             <p className="event-time">
-              <span className="label">🕐 </span>{event.time}
+              <span className="label"></span>{event.time}
             </p>
             <p className="event-venue">
-              <span className="label">📍 </span>{event.venue}
+              <span className="label"></span>{event.venue}
             </p>
           </motion.div>
         ))}

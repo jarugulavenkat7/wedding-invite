@@ -278,6 +278,8 @@ label {
   );
   text-align: center;
   padding: 2rem;
+  /* Navbar is fixed; add top breathing room so hero text doesn't collide. */
+  padding-top: 6rem;
   padding-bottom: 6rem;
   overflow: hidden;
 }
@@ -856,6 +858,10 @@ label {
 @media (max-width: 768px) {
   .desktop-nav {
     display: none;
+  }
+
+  .hero {
+    padding-top: 5.2rem;
   }
 
   .mobile-nav-overlay {

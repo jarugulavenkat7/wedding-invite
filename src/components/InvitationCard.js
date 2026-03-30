@@ -10,6 +10,15 @@ const InvitationCard = () => {
     threshold: 0.2,
   });
 
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: 'easeOut' },
+    },
+  };
+
   const cardVariants = {
     hidden: { opacity: 0, y: 60, scale: 0.95 },
     visible: {
@@ -21,7 +30,15 @@ const InvitationCard = () => {
   };
 
   return (
-    <section className="invitation-section" id="invitation" ref={ref}>
+    <motion.section
+      className="invitation-section"
+      id="invitation"
+      ref={ref}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={sectionVariants}
+    >
       <motion.div
         className="invitation-card"
         variants={cardVariants}
@@ -120,7 +137,7 @@ const InvitationCard = () => {
           </div>
         </motion.div>
       </motion.div>
-    </section>
+    </motion.section>
   );
 };
 

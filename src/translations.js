@@ -86,7 +86,8 @@ const translations = {
         venue: 'Ranch @McKinney',
       },
       {
-        icon: '💒',
+        icon: '🕉️',
+        iconImage: 'image%202.png',
         name: 'Wedding Ceremony',
         nameSub: 'వివాహ వేడుక',
         date: 'Sunday, 10th May 2026',
@@ -113,7 +114,7 @@ const translations = {
       { emoji: '💛', label: 'Haldi' },
       { emoji: '🪔', label: 'Pelli Kuthuru' },
       { emoji: '🎶', label: 'Sangeet' },
-      { emoji: '💒', label: 'Wedding' },
+      { emoji: '🕉️', label: 'Wedding' },
     ],
     galleryHint: '📸 Replace placeholders with your photos in the public/gallery/ folder',
 
@@ -234,7 +235,8 @@ const translations = {
         venue: 'రాంచ్ @మక్కిన్నే',
       },
       {
-        icon: '💒',
+        icon: '🕉️',
+        iconImage: 'image%202.png',
         name: 'వివాహ వేడుక',
         nameSub: 'Wedding Ceremony',
         date: 'ఆదివారం, 10 మే 2026',
@@ -261,7 +263,7 @@ const translations = {
       { emoji: '💛', label: 'పసుపు పండుగ' },
       { emoji: '🪔', label: 'పెళ్ళి కూతురు' },
       { emoji: '🎶', label: 'సంగీత్' },
-      { emoji: '💒', label: 'వివాహం' },
+      { emoji: '🕉️', label: 'వివాహం' },
     ],
     galleryHint: '📸 మీ ఫోటోలను public/gallery/ ఫోల్డర్‌లో ఉంచండి',
 
@@ -382,7 +384,8 @@ const translations = {
         venue: 'ರಾಂಚ್ @ಮೆಕ್ಕಿನ್ನಿ',
       },
       {
-        icon: '💒',
+        icon: '🕉️',
+        iconImage: 'image%202.png',
         name: 'ಮದುವೆ ಸಮಾರಂಭ',
         nameSub: 'Wedding Ceremony',
         date: 'ಭಾನುವಾರ, 10 ಮೇ 2026',
@@ -409,7 +412,7 @@ const translations = {
       { emoji: '💛', label: 'ಹಲದಿ' },
       { emoji: '🪔', label: 'ಮದುವೆ ಸಮಾರಂಭ' },
       { emoji: '🎶', label: 'ಸಂಗೀತ್' },
-      { emoji: '💒', label: 'ಮದುವೆ' },
+      { emoji: '🕉️', label: 'ಮದುವೆ' },
     ],
     galleryHint: '📸 ನಿಮ್ಮ ಫೋಟೋಗಳನ್ನು public/gallery/ ಫೋಲ್ಡರ್‌ನಲ್ಲಿ ಇಡಿ',
 

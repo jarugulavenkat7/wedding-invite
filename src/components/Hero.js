@@ -8,15 +8,6 @@ const Hero = () => {
   const weddingDate = new Date('2026-05-10T09:02:00');
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
 
-  const sectionVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: 'easeOut' },
-    },
-  };
-
   function getTimeLeft() {
     const now = new Date();
     const diff = weddingDate - now;
@@ -39,14 +30,7 @@ const Hero = () => {
   const petals = ['🌸', '🪷', '🌺', '💐', '🌼'];
 
   return (
-    <motion.section
-      className="hero"
-      id="home"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.35 }}
-      variants={sectionVariants}
-    >
+    <section className="hero" id="home">
       {/* Decorative borders */}
       <div className="hero-border" />
       <div className="hero-border-inner" />
@@ -196,7 +180,7 @@ const Hero = () => {
           ↓
         </motion.span>
       </motion.div>
-    </motion.section>
+    </section>
   );
 };
 

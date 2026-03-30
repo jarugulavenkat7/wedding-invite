@@ -154,7 +154,8 @@ const translations = {
 
     // Loader
     loaderName: 'Sushmitha & Naresh Kumar',
-    loaderSubName: 'సుష్మిత & నరేష్ కుమార్ · ಸುಷ್ಮಿತಾ & ನರೇಶ್ ಕುಮಾರ್',
+    // Kannada disabled site-wide (removed Kannada script from loading screen subtitle)
+    loaderSubName: 'సుష్మిత & నరేష్ కుమార్',
   },
 
   te: {
@@ -312,7 +313,8 @@ const translations = {
 
     // Loader
     loaderName: 'సుష్మిత & నరేష్ కుమార్',
-    loaderSubName: 'Sushmitha & Naresh Kumar · ಸುಷ್ಮಿತಾ & ನರೇಶ್ ಕುಮಾರ್',
+    // Kannada disabled site-wide (removed Kannada script from loading screen subtitle)
+    loaderSubName: 'సుష్మిత & నరేష్ కుమార్',
   },
 
   kn: {

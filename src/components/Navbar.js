@@ -12,7 +12,6 @@ const Navbar = () => {
   const languages = [
     { code: 'en', label: 'EN' },
     { code: 'te', label: 'తె' },
-    { code: 'kn', label: 'ಕಂ' },
   ];
 
   useEffect(() => {

@@ -23,8 +23,25 @@ const EventDetails = () => {
     threshold: 0.1,
   });
 
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: 'easeOut' },
+    },
+  };
+
   return (
-    <section className="events-section" id="events" ref={ref}>
+    <motion.section
+      className="events-section"
+      id="events"
+      ref={ref}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.15 }}
+      variants={sectionVariants}
+    >
       <motion.h2
         className="section-title"
         initial={{ opacity: 0, y: 30 }}
@@ -68,7 +85,7 @@ const EventDetails = () => {
           </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

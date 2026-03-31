@@ -2,7 +2,8 @@ import React, { createContext, useContext, useEffect, useMemo, useState } from '
 
 const LanguageContext = createContext();
 
-const supportedLanguages = ['en', 'te', 'kn'];
+// Kannada ("kn") intentionally disabled site-wide.
+const supportedLanguages = ['en', 'te'];
 
 export const useLanguage = () => useContext(LanguageContext);
 

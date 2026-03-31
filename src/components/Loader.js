@@ -4,6 +4,7 @@ import useT from '../useT';
 
 const Loader = () => {
   const t = useT();
+  const showSubtitle = t.loaderSubName && t.loaderSubName !== t.loaderName;
 
   return (
     <motion.div
@@ -71,7 +72,7 @@ const Loader = () => {
         animate={{ opacity: 0.8 }}
         transition={{ duration: 0.8, delay: 1.0 }}
       >
-        {t.loaderSubName}
+        {showSubtitle ? t.loaderSubName : null}
       </motion.div>
 
       {/* Animated dots */}

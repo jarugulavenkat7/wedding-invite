@@ -7,27 +7,14 @@ const PreWeddingVenue = () => {
   const t = useT();
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.15,
   });
 
-  const sectionVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: 'easeOut' },
-    },
-  };
-
   return (
-    <motion.section
+    <section
       className="venue-section"
       id="pre-wedding-venue"
       ref={ref}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-      variants={sectionVariants}
     >
       <motion.h2
         className="section-title"
@@ -96,7 +83,7 @@ const PreWeddingVenue = () => {
           {t.preVenueDirections}
         </motion.a>
       </motion.div>
-    </motion.section>
+    </section>
   );
 };
 

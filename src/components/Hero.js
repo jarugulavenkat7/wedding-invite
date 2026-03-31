@@ -6,12 +6,12 @@ const PETAL_EMOJIS = ['🌸', '🪷', '🌺', '💐', '🌼'];
 
 const FloatingPetals = memo(() => {
   const petalConfigs = useMemo(
-    () => Array.from({ length: 12 }, (_, i) => ({
+    () => Array.from({ length: 8 }, (_, i) => ({
       id: i,
       left: `${Math.random() * 100}%`,
-      duration: 8 + Math.random() * 6,
-      delay: Math.random() * 8,
-      drift: Math.sin(i) * 80,
+      duration: 10 + Math.random() * 6,
+      delay: Math.random() * 10,
+      drift: Math.sin(i) * 60,
       rotate: 360 * (i % 2 === 0 ? 1 : -1),
       emoji: PETAL_EMOJIS[i % PETAL_EMOJIS.length],
     })),

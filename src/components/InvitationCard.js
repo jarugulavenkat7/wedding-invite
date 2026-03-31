@@ -1,10 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import useT from '../useT';
+import { useLanguage } from '../LanguageContext';
+
+const PUBLIC_URL = process.env.PUBLIC_URL || '';
 
 const InvitationCard = () => {
-  const t = useT();
+  const { lang } = useLanguage();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -20,105 +22,46 @@ const InvitationCard = () => {
     },
   };
 
+  // Use Telugu image for Telugu and Kannada, English image for English
+  const imageSrc = lang === 'en' 
+    ? `${PUBLIC_URL}/english.jpg` 
+    : `${PUBLIC_URL}/telugu.jpg`;
+
+  const imageAlt = lang === 'en'
+    ? 'Wedding Invitation - Sushmitha & Naresh Kumar'
+    : lang === 'te'
+    ? 'వివాహ శుభలేఖ - సుష్మిత & నరేష్ కుమార్'
+    : 'ಮದುವೆ ಆಮಂತ್ರಣ - ಸುಷ್ಮಿತಾ & ನರೇಶ್ ಕುಮಾರ್';
+
   return (
     <section className="invitation-section" id="invitation" ref={ref}>
       <motion.div
-        className="invitation-card"
+        className="invitation-image-card"
         variants={cardVariants}
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
       >
-        {/* Corner ornaments */}
-        <span className="corner-ornament top-left">❋</span>
-        <span className="corner-ornament top-right">❋</span>
-        <span className="corner-ornament bottom-left">❋</span>
-        <span className="corner-ornament bottom-right">❋</span>
-
-        <div className="invitation-header">
-          <motion.div
-            className="invitation-om"
-            initial={{ opacity: 0 }}
-            animate={inView ? { opacity: 1 } : {}}
-            transition={{ delay: 0.3 }}
-          >
-            
-          </motion.div>
-
-          <motion.p
-            className="invitation-telugu-text"
-            initial={{ opacity: 0 }}
-            animate={inView ? { opacity: 0.8 } : {}}
-            transition={{ delay: 0.5 }}
-          >
-            {t.invocationText}
-          </motion.p>
-
-          <motion.h2
-            className="invitation-title"
-            initial={{ opacity: 0 }}
-            animate={inView ? { opacity: 1 } : {}}
-            transition={{ delay: 0.6 }}
-          >
-            {t.invitationTitle}
-          </motion.h2>
+        {/* Decorative border frame */}
+        <div className="invitation-image-frame">
+          {/* Corner ornaments */}
+          <span className="frame-corner top-left">❋</span>
+          <span className="frame-corner top-right">❋</span>
+          <span className="frame-corner bottom-left">❋</span>
+          <span className="frame-corner bottom-right">❋</span>
+          
+          {/* Side ornaments */}
+          <span className="frame-side side-top">✦ ✦ ✦</span>
+          <span className="frame-side side-bottom">✦ ✦ ✦</span>
+          
+          <motion.img
+            src={imageSrc}
+            alt={imageAlt}
+            className="invitation-image"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={inView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ delay: 0.3, duration: 0.8 }}
+          />
         </div>
-
-        <motion.div
-          className="invitation-body"
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.8, duration: 0.6 }}
-        >
-          <p style={{ marginBottom: '1rem', fontStyle: 'italic', color: '#8B1A1A' }}>
-            {t.blessingLine}
-          </p>
-
-          <p className="parents">
-            {t.brideParents}
-          </p>
-          <p style={{ margin: '0.3rem 0', fontStyle: 'italic', opacity: 0.7 }}>
-            {t.inviteLine}
-          </p>
-
-          <motion.span
-            className="couple-names"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={inView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ delay: 1.0, duration: 0.8, type: 'spring' }}
-          >
-            {t.brideName}
-          </motion.span>
-
-          <p style={{ fontSize: '1.2rem', color: '#D4A843', margin: '0.3rem 0' }}>{t.withText}</p>
-
-          <motion.span
-            className="couple-names"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={inView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ delay: 1.2, duration: 0.8, type: 'spring' }}
-          >
-            {t.groomName}
-          </motion.span>
-
-          <p className="parents" style={{ marginTop: '0.5rem' }}>
-            {t.groomParents}
-          </p>
-
-          <div style={{ marginTop: '1.5rem', borderTop: '1px solid rgba(212,168,67,0.3)', paddingTop: '1.5rem' }}>
-            <p className="detail-line">
-              <span className="highlight">{t.dateLabel}</span> {t.dateValue}
-            </p>
-            <p className="detail-line">
-              <span className="highlight">{t.muhurthamLabel}</span> {t.muhurthamValue}
-            </p>
-            <p className="detail-line">
-              <span className="highlight">{t.venueLabel}</span> {t.venueValue}
-            </p>
-            <p className="detail-line" style={{ fontSize: '0.95rem', opacity: 0.7 }}>
-              {t.venueAddress}
-            </p>
-          </div>
-        </motion.div>
       </motion.div>
     </section>
   );

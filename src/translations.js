@@ -3,7 +3,7 @@ const translations = {
     // Navbar
     navInvitation: 'Invitation',
     navEvents: 'Events',
-    navPreVenue: 'Pre-Wedding',
+    navPreVenue: 'Pre-Wedding Venue',
     navVenue: 'Venue',
     navGallery: 'Gallery',
     navRsvp: 'RSVP',
@@ -82,7 +82,7 @@ const translations = {
 
     // Pre-Wedding Venue
     preVenueTitle: 'Pre-Wedding Venue',
-    preVenueSubtitle: 'వివాహ పూర్వ వేడుకల వేదిక',
+    preVenueSubtitle: 'పెళ్లి ముందు కార్యక్రమాల వేదిక',
     preVenueName: 'Ranch @McKinney',
     preVenueAddr1: '2621 FM1827,',
     preVenueAddr2: 'McKinney, TX 75071',
@@ -115,7 +115,7 @@ const translations = {
     rsvpMessage: 'Your presence would be the greatest gift and blessing for the couple. We look forward to celebrating this joyous occasion with you!',
     rsvpMessageTelugu: 'మీ రాక మాకు గొప్ప ఆశీర్వాదం 🙏',
     rsvpButton: '🙏 Confirm Your Presence',
-    rsvpNote: 'Kindly RSVP by 1st June 2026 to help us with the arrangements.',
+    rsvpNote: 'Kindly RSVP by 10th April 2026 to help us with the arrangements.',
     rsvpContactTitle: 'For any queries, please contact:',
     rsvpBrideFamily: "📞 Bride's Family: +1 (660) 528-1431",
     rsvpGroomFamily: "📞 Groom's Family: +1 (669) 290-7861",
@@ -124,7 +124,7 @@ const translations = {
     // Footer
     footerNames: 'Sushmitha & Naresh Kumar',
     footerDate: '10 · 05 · 2026',
-    footerQuote: '"Two souls with but a single thought,\nTwo hearts that beat as one."',
+    footerQuote: '"Together with our families, we invite you to celebrate love, laughter, and happily ever after."',
     footerMadeWith: "Made with ❤️ for Sushmitha & Naresh Kumar's Wedding",
 
     // Music
@@ -222,7 +222,7 @@ const translations = {
     ],
 
     // Pre-Wedding Venue
-    preVenueTitle: 'వివాహ పూర్వ వేడుకల వేదిక',
+    preVenueTitle: 'పెళ్లి ముందు కార్యక్రమాల వేదిక',
     preVenueSubtitle: 'ముందస్తు వేడుకలు',
     preVenueName: 'రాంచ్ @మక్కిన్నే',
     preVenueAddr1: '2621 FM1827,',
@@ -256,7 +256,7 @@ const translations = {
     rsvpMessage: 'మీ రాక ఈ జంటకు గొప్ప బహుమతి మరియు ఆశీర్వాదం. ఈ శుభ సందర్భాన్ని మీతో కలిసి జరుపుకోవడానికి ఎదురుచూస్తున్నాము!',
     rsvpMessageTelugu: 'మీ రాక మాకు గొప్ప ఆశీర్వాదం 🙏',
     rsvpButton: '🙏 మీ రాకను నిర్ధారించండి',
-    rsvpNote: 'దయచేసి 1 జూన్ 2026 లోపు మీ రాకను నిర్ధారించండి.',
+    rsvpNote: 'దయచేసి 10 ఏప్రిల్ 2026 లోపు మీ రాకను నిర్ధారించండి.',
     rsvpContactTitle: 'ఏవైనా సందేహాలకు, దయచేసి సంప్రదించండి:',
     rsvpBrideFamily: '📞 వధువు కుటుంబం: +1 (660) 528-1431',
     rsvpGroomFamily: '📞 వరుడి కుటుంబం: +1 (669) 290-7861',
@@ -265,7 +265,7 @@ const translations = {
     // Footer
     footerNames: 'సుష్మిత & నరేష్ కుమార్',
     footerDate: '10 · 05 · 2026',
-    footerQuote: '"రెండు ఆత్మలు ఒకే ఆలోచనతో,\nరెండు హృదయాలు ఒకేలా కొట్టుకుంటాయి."',
+    footerQuote: '"మా ఆనందాన్ని మీతో పంచుకోవాలని మనస్పూర్తిగా ఆహ్వానిస్తున్నాం."',
     footerMadeWith: 'సుష్మిత & నరేష్ కుమార్ వివాహం కోసం ❤️ తో తయారు చేయబడింది',
 
     // Music
@@ -361,7 +361,7 @@ const translations = {
         venue: 'ಎಲಿಗಾನ್ಸ್ ಬಾಲ್ ರೂಮ್ & ಈವೆಂಟ್ ಸೆಂಟರ್',
       },
     ],
-    
+
 
     // Pre-Wedding Venue
     preVenueTitle: 'ಮದುವೆ ಪೂರ್ವ ಕಾರ್ಯಕ್ರಮದ ಸ್ಥಳ',
@@ -398,7 +398,7 @@ const translations = {
     rsvpMessage: 'ನಿಮ್ಮ ಉಪಸ್ಥಿತಿ ಈ ಜೋಡಿಗೆ ಅತ್ಯಂತ ದೊಡ್ಡ ಉಡುಗೊರೆ ಮತ್ತು ಆಶೀರ್ವಾದವಾಗಿದೆ. ಈ ಶುಭ ಸಂದರ್ಭವನ್ನು ನಿಮ್ಮೊಂದಿಗೆ ಆಚರಿಸಲು ನಾವು ಎದುರು ನೋಡುತ್ತಿದ್ದೇವೆ!',
     rsvpMessageTelugu: 'ನಿಮ್ಮ ಆಗಮನ ನಮಗೆ ಮಹಾ ಆಶೀರ್ವಾದ 🙏',
     rsvpButton: '🙏 ನಿಮ್ಮ ಆಗಮನವನ್ನು ಖಚಿತಪಡಿಸಿ',
-    rsvpNote: 'ದಯವಿಟ್ಟು 1 ಜೂನ್ 2026 ರೊಳಗೆ RSVP ಮಾಡಿ, ವ್ಯವಸ್ಥೆಗಳಿಗೆ ಸಹಾಯವಾಗುತ್ತದೆ.',
+    rsvpNote: 'ದಯವಿಟ್ಟು 10 ಏಪ್ರಿಲ್ 2026 ರೊಳಗೆ RSVP ಮಾಡಿ, ವ್ಯವಸ್ಥೆಗಳಿಗೆ ಸಹಾಯವಾಗುತ್ತದೆ.',
     rsvpContactTitle: 'ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳಿಗಾಗಿ ಸಂಪರ್ಕಿಸಿ:',
     rsvpBrideFamily: '📞 ವಧುವಿನ ಕುಟುಂಬ: +1 (660) 528-1431',
     rsvpGroomFamily: '📞 ವರನ ಕುಟುಂಬ: +1 (669) 290-7861',

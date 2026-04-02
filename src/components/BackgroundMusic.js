@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import useT from '../useT';
 
-const CLIP_START = 13;
+const CLIP_START = 30;
 const CLIP_END = 50;
 const AUDIO_SRC = `${process.env.PUBLIC_URL || ''}/audio.mp3`;
 

@@ -56,15 +56,15 @@ const translations = {
       {
         icon: '💛',
         name: 'Haldi',
-        nameSub: 'పసుపు పండుగ',
+        nameSub: 'పసుపు కార్యక్రమం',
         date: 'Saturday, 9th May 2026',
         time: '9:00 AM onwards',
         venue: 'Ranch @McKinney',
       },
       {
         icon: '🪔',
-        name: 'Pelli Kuthuru',
-        nameSub: 'పెళ్ళి కూతురు',
+        name: 'Pelli Kuthuru - Pelli Koduku',
+        nameSub: 'పెళ్ళి కూతురు - పెళ్ళి కొడుకు',
         date: 'Saturday, 9th May 2026',
         time: '4:00 PM onwards',
         venue: 'Ranch @McKinney',
@@ -144,8 +144,8 @@ const translations = {
     // Navbar
     navInvitation: 'శుభలేఖ',
     navEvents: 'వేడుకలు',
-    navPreVenue: 'పూర్వ వేదిక',
-    navVenue: 'వేదిక',
+    navPreVenue: 'పెళ్లి ముందు కార్యక్రమాల వేదిక',
+    navVenue: 'కళ్యాణ మండపం',
     navGallery: 'గ్యాలరీ',
     navRsvp: 'RSVP',
 
@@ -196,7 +196,7 @@ const translations = {
       },
       {
         icon: '💛',
-        name: 'పసుపు పండుగ',
+        name: 'పసుపు కార్యక్రమం',
         nameSub: 'Haldi',
         date: 'శనివారం, 9 మే 2026',
         time: 'ఉదయం 9:00 నుండి',
@@ -204,8 +204,8 @@ const translations = {
       },
       {
         icon: '🪔',
-        name: 'పెళ్ళి కూతురు',
-        nameSub: 'Pelli Kuthuru',
+        name: 'పెళ్ళి కూతురు - పెళ్ళి కొడుకు',
+        nameSub: 'Pelli Kuthuru - Pelli Koduku',
         date: 'శనివారం, 9 మే 2026',
         time: 'సాయంత్రం 4:00 నుండి',
         venue: 'రాంచ్ @మక్కిన్నే',
@@ -244,8 +244,8 @@ const translations = {
     gallerySubtitle: 'సంతోషకరమైన జ్ఞాపకాలు',
     galleryItems: [
       { emoji: '🌸', label: 'నిశ్చితార్థం' },
-      { emoji: '💛', label: 'పసుపు పండుగ' },
-      { emoji: '🪔', label: 'పెళ్ళి కూతురు' },
+      { emoji: '💛', label: 'పసుపు కార్యక్రమం' },
+      { emoji: '🪔', label: 'పెళ్ళి కూతురు - పెళ్ళి కొడుకు' },
       { emoji: '🕉️', label: 'వివాహం' },
     ],
     galleryHint: '📸 మీ ఫోటోలను public/gallery/ ఫోల్డర్‌లో ఉంచండి',

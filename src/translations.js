@@ -54,19 +54,11 @@ const translations = {
         venue: "Ranch @McKinney",
       },
       {
-        icon: '🌿',
-        name: 'Mahendi',
-        nameSub: 'మెహెందీ',
-        date: 'Friday, 8th May 2026',
-        time: '7:00 PM onwards',
-        venue: "Ranch @McKinney",
-      },
-      {
         icon: '💛',
         name: 'Haldi',
         nameSub: 'పసుపు పండుగ',
         date: 'Saturday, 9th May 2026',
-        time: '8:00 AM onwards',
+        time: '9:00 AM onwards',
         venue: 'Ranch @McKinney',
       },
       {
@@ -74,15 +66,7 @@ const translations = {
         name: 'Pelli Kuthuru',
         nameSub: 'పెళ్ళి కూతురు',
         date: 'Saturday, 9th May 2026',
-        time: '11:00 AM onwards',
-        venue: 'Ranch @McKinney',
-      },
-      {
-        icon: '🎶',
-        name: 'Sangeet',
-        nameSub: 'సంగీత్',
-        date: 'Saturday, 9th May 2026',
-        time: '6:00 PM onwards',
+        time: '4:00 PM onwards',
         venue: 'Ranch @McKinney',
       },
       {
@@ -119,10 +103,8 @@ const translations = {
     gallerySubtitle: 'ఆనందపు క్షణాలు',
     galleryItems: [
       { emoji: '🌸', label: 'Engagement' },
-      { emoji: '🌿', label: 'Mahendi' },
       { emoji: '💛', label: 'Haldi' },
       { emoji: '🪔', label: 'Pelli Kuthuru' },
-      { emoji: '🎶', label: 'Sangeet' },
       { emoji: '🕉️', label: 'Wedding' },
     ],
     galleryHint: '📸 Replace placeholders with your photos in the public/gallery/ folder',
@@ -213,19 +195,11 @@ const translations = {
         venue: 'రాంచ్ @మక్కిన్నే',
       },
       {
-        icon: '🌿',
-        name: 'మెహెందీ',
-        nameSub: 'Mahendi',
-        date: 'శుక్రవారం, 8 మే 2026',
-        time: 'రాత్రి 7:00 నుండి',
-        venue: 'రాంచ్ @మక్కిన్నే',
-      },
-      {
         icon: '💛',
         name: 'పసుపు పండుగ',
         nameSub: 'Haldi',
         date: 'శనివారం, 9 మే 2026',
-        time: 'ఉదయం 8:00 నుండి',
+        time: 'ఉదయం 9:00 నుండి',
         venue: 'రాంచ్ @మక్కిన్నే',
       },
       {
@@ -233,15 +207,7 @@ const translations = {
         name: 'పెళ్ళి కూతురు',
         nameSub: 'Pelli Kuthuru',
         date: 'శనివారం, 9 మే 2026',
-        time: 'ఉదయం 11:00 నుండి',
-        venue: 'రాంచ్ @మక్కిన్నే',
-      },
-      {
-        icon: '🎶',
-        name: 'సంగీత్',
-        nameSub: 'Sangeet',
-        date: 'శనివారం, 9 మే 2026',
-        time: 'సాయంత్రం 6:00 నుండి',
+        time: 'సాయంత్రం 4:00 నుండి',
         venue: 'రాంచ్ @మక్కిన్నే',
       },
       {
@@ -278,10 +244,8 @@ const translations = {
     gallerySubtitle: 'సంతోషకరమైన జ్ఞాపకాలు',
     galleryItems: [
       { emoji: '🌸', label: 'నిశ్చితార్థం' },
-      { emoji: '🌿', label: 'మెహెందీ' },
       { emoji: '💛', label: 'పసుపు పండుగ' },
       { emoji: '🪔', label: 'పెళ్ళి కూతురు' },
-      { emoji: '🎶', label: 'సంగీత్' },
       { emoji: '🕉️', label: 'వివాహం' },
     ],
     galleryHint: '📸 మీ ఫోటోలను public/gallery/ ఫోల్డర్‌లో ఉంచండి',
@@ -314,7 +278,7 @@ const translations = {
     // Loader
     loaderName: 'సుష్మిత & నరేష్ కుమార్',
     // Kannada disabled site-wide (removed Kannada script from loading screen subtitle)
-    loaderSubName: 'సుష్మిత & నరేష్ కుమార్',
+    loaderSubName: 'Sushmitha & Naresh Kumar',
   },
 
   kn: {
@@ -372,19 +336,11 @@ const translations = {
         venue: 'ರಾಂಚ್ @ಮೆಕ್ಕಿನ್ನಿ',
       },
       {
-        icon: '🌿',
-        name: 'ಮೆಹಂದಿ',
-        nameSub: 'Mahendi',
-        date: 'ಶುಕ್ರವಾರ, 8 ಮೇ 2026',
-        time: 'ರಾತ್ರಿ 7:00 ರಿಂದ',
-        venue: 'ರಾಂಚ್ @ಮೆಕ್ಕಿನ್ನಿ',
-      },
-      {
         icon: '💛',
         name: 'ಹಲದಿ',
         nameSub: 'Haldi',
         date: 'ಶನಿವಾರ, 9 ಮೇ 2026',
-        time: 'ಬೆಳಿಗ್ಗೆ 8:00 ರಿಂದ',
+        time: 'ಬೆಳಿಗ್ಗೆ 9:00 ರಿಂದ',
         venue: 'ರಾಂಚ್ @ಮೆಕ್ಕಿನ್ನಿ',
       },
       {
@@ -392,15 +348,7 @@ const translations = {
         name: 'ಮದುವೆ ಗಂಡು/ಹೆಣ್ಣು ಕಾರ್ಯ',
         nameSub: 'Pelli Kuthuru',
         date: 'ಶನಿವಾರ, 9 ಮೇ 2026',
-        time: 'ಬೆಳಿಗ್ಗೆ 11:00 ರಿಂದ',
-        venue: 'ರಾಂಚ್ @ಮೆಕ್ಕಿನ್ನಿ',
-      },
-      {
-        icon: '🎶',
-        name: 'ಸಂಗೀತ್',
-        nameSub: 'Sangeet',
-        date: 'ಶನಿವಾರ, 9 ಮೇ 2026',
-        time: 'ಸಂಜೆ 6:00 ರಿಂದ',
+        time: 'ಸಂಜೆ 4:00 ರಿಂದ',
         venue: 'ರಾಂಚ್ @ಮೆಕ್ಕಿನ್ನಿ',
       },
       {
@@ -438,10 +386,8 @@ const translations = {
     gallerySubtitle: 'ಸಂತೋಷದ ನೆನಪುಗಳು',
     galleryItems: [
       { emoji: '🌸', label: 'ನಿಶ್ಚಿತಾರ್ಥ' },
-      { emoji: '🌿', label: 'ಮೆಹಂದಿ' },
       { emoji: '💛', label: 'ಹಲದಿ' },
-      { emoji: '🪔', label: 'ಮದುವೆ ಸಮಾರಂಭ' },
-      { emoji: '🎶', label: 'ಸಂಗೀತ್' },
+      { emoji: '🪔', label: 'ಮದುವೆ ಗಂಡು/ಹೆಣ್ಣು ಕಾರ್ಯ' },
       { emoji: '🕉️', label: 'ಮದುವೆ' },
     ],
     galleryHint: '📸 ನಿಮ್ಮ ಫೋಟೋಗಳನ್ನು public/gallery/ ಫೋಲ್ಡರ್‌ನಲ್ಲಿ ಇಡಿ',

@@ -16,7 +16,6 @@ const FloatingRsvp = () => {
       whileTap={{ scale: 0.97 }}
       aria-label={t.navRsvp}
     >
-      <span className="rsvp-fab-icon" aria-hidden="true">🙏</span>
       <span className="rsvp-fab-text">{t.navRsvp}</span>
     </motion.a>
   );

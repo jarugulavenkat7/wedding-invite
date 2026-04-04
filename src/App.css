@@ -25,6 +25,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
@@ -36,6 +37,8 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Momentum scroll for iOS */
+  position: relative;
 }
 
 body,
@@ -145,9 +148,14 @@ label {
 
 .navbar.scrolled {
   background: rgba(139, 26, 26, 0.95);
-  backdrop-filter: blur(10px);
   padding: 0.6rem 2rem;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 769px) {
+  .navbar.scrolled {
+    backdrop-filter: blur(10px);
+  }
 }
 
 .nav-links {
@@ -442,14 +450,12 @@ label {
   height: 1px;
   width: 100px;
   background: linear-gradient(90deg, transparent, var(--gold), transparent);
-  will-change: width;
 }
 
 .floral-divider .ornament {
   font-size: 1.5rem;
   color: var(--gold);
   opacity: 0.7;
-  will-change: transform, opacity;
   backface-visibility: hidden;
 }
 
@@ -867,8 +873,9 @@ label {
   z-index: 0;
   font-size: 1.5rem;
   opacity: 0.3;
-  will-change: transform, opacity;
   backface-visibility: hidden;
+  /* Promote to GPU layer without excessive memory reservation */
+  transform: translateZ(0);
 }
 
 /* ============ RESPONSIVE ============ */

@@ -224,7 +224,7 @@ label {
   display: none;
 }
 
-.music-toggle {
+.rsvp-fab {
   position: fixed;
   right: 1.5rem;
   bottom: 1.5rem;
@@ -240,23 +240,20 @@ label {
   box-shadow: 0 10px 30px rgba(92, 10, 10, 0.28);
   backdrop-filter: blur(10px);
   cursor: pointer;
+  text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
-.music-toggle:hover {
+.rsvp-fab:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 34px rgba(92, 10, 10, 0.36);
 }
 
-.music-toggle.playing {
-  background: rgba(139, 26, 26, 0.96);
-}
-
-.music-toggle-icon {
+.rsvp-fab-icon {
   font-size: 1.2rem;
 }
 
-.music-toggle-text {
+.rsvp-fab-text {
   font-family: 'Cormorant Garamond', serif;
   font-size: 0.95rem;
   font-weight: 700;
@@ -795,72 +792,6 @@ label {
   color: var(--deep-maroon);
 }
 
-/* ============ RSVP ============ */
-.rsvp-section {
-  padding: 5rem 2rem;
-  background: linear-gradient(180deg, var(--cream) 0%, #F5E6D3 100%);
-  text-align: center;
-}
-
-.rsvp-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.rsvp-message {
-  font-size: 1.3rem;
-  line-height: 1.8;
-  margin-bottom: 2rem;
-  color: var(--text);
-}
-
-.rsvp-btn {
-  display: inline-block;
-  padding: 1.2rem 3rem;
-  background: var(--maroon);
-  color: var(--gold);
-  font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 2px solid var(--gold);
-  transition: all 0.4s ease;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-.rsvp-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(212, 168, 67, 0.2), transparent);
-  transition: left 0.5s ease;
-}
-
-.rsvp-btn:hover::before {
-  left: 100%;
-}
-
-.rsvp-btn:hover {
-  background: var(--gold);
-  color: var(--deep-maroon);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(139, 26, 26, 0.3);
-}
-
-.rsvp-note {
-  font-size: 0.95rem;
-  color: var(--kolam-gray);
-  margin-top: 1.5rem;
-  font-style: italic;
-}
-
 /* ============ FOOTER ============ */
 .footer {
   padding: 3rem 2rem;
@@ -1078,13 +1009,13 @@ label {
 }
 
 @media (max-width: 480px) {
-  .music-toggle {
+  .rsvp-fab {
     right: 1rem;
     bottom: 1rem;
     padding: 0.8rem 1rem;
   }
 
-  .music-toggle-text {
+  .rsvp-fab-text {
     font-size: 0.82rem;
   }
 
@@ -1098,12 +1029,6 @@ label {
 
   .section-title {
     font-size: 1.5rem;
-  }
-
-  .rsvp-btn {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    letter-spacing: 2px;
   }
 }
 

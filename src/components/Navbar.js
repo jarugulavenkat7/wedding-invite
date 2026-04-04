@@ -44,7 +44,6 @@ const Navbar = () => {
     { href: '#events', label: t.navEvents },
     { href: '#pre-wedding-venue', label: t.navPreVenue },
     { href: '#venue', label: t.navVenue },
-    { href: '#rsvp', label: t.navRsvp },
   ];
 
   const closeMobile = () => setMobileOpen(false);

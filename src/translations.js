@@ -63,8 +63,8 @@ const translations = {
       },
       {
         icon: '🪔',
-        name: 'Pelli Kuthuru - Pelli Koduku',
-        nameSub: 'పెళ్ళి కూతురు - పెళ్ళి కొడుకు',
+        name: 'Pelli Kuthuru',
+        nameSub: 'పెళ్ళి కూతురు',
         date: 'Saturday, 9th May 2026',
         time: '4:00 PM onwards',
         venue: 'Ranch @McKinney',
@@ -109,30 +109,11 @@ const translations = {
     ],
     galleryHint: '📸 Replace placeholders with your photos in the public/gallery/ folder',
 
-    // RSVP
-    rsvpTitle: 'RSVP',
-    rsvpSubtitle: 'మీ రాక మా ఆశీర్వాదం',
-    rsvpMessage: 'Your presence would be the greatest gift and blessing for the couple. We look forward to celebrating this joyous occasion with you!',
-    rsvpMessageTelugu: 'మీ రాక మాకు గొప్ప ఆశీర్వాదం 🙏',
-    rsvpButton: '🙏 Confirm Your Presence',
-    rsvpNote: 'Kindly RSVP by 10th April 2026 to help us with the arrangements.',
-    rsvpContactTitle: 'For any queries, please contact:',
-    rsvpBrideFamily: "📞 Bride's Family: +1 (660) 528-1431",
-    rsvpGroomFamily: "📞 Groom's Family: +1 (669) 290-7861",
-    rsvpEmail: '✉️ Email: jarugulavenkat7@gmail.com',
-
     // Footer
     footerNames: 'Sushmitha & Naresh Kumar',
     footerDate: '10 · 05 · 2026',
     footerQuote: '"Together with our families, we invite you to celebrate love, laughter, and happily ever after."',
     footerMadeWith: "Made with ❤️ for Sushmitha & Naresh Kumar's Wedding",
-
-    // Music
-    musicLoading: 'Loading Melody',
-    musicOn: 'Melody On',
-    musicOff: 'Melody Off',
-    musicPlayLabel: 'Play background melody',
-    musicPauseLabel: 'Pause background melody',
 
     // Loader
     loaderName: 'Sushmitha & Naresh Kumar',
@@ -144,8 +125,8 @@ const translations = {
     // Navbar
     navInvitation: 'శుభలేఖ',
     navEvents: 'వేడుకలు',
-    navPreVenue: 'పెళ్లి ముందు కార్యక్రమాల వేదిక',
-    navVenue: 'కళ్యాణ మండపం',
+    navPreVenue: 'పూర్వ వేదిక',
+    navVenue: 'వేదిక',
     navGallery: 'గ్యాలరీ',
     navRsvp: 'RSVP',
 
@@ -204,8 +185,8 @@ const translations = {
       },
       {
         icon: '🪔',
-        name: 'పెళ్ళి కూతురు - పెళ్ళి కొడుకు',
-        nameSub: 'Pelli Kuthuru - Pelli Koduku',
+        name: 'పెళ్ళి కూతురు',
+        nameSub: 'Pelli Kuthuru',
         date: 'శనివారం, 9 మే 2026',
         time: 'సాయంత్రం 4:00 నుండి',
         venue: 'రాంచ్ @మక్కిన్నే',
@@ -244,36 +225,17 @@ const translations = {
     gallerySubtitle: 'సంతోషకరమైన జ్ఞాపకాలు',
     galleryItems: [
       { emoji: '🌸', label: 'నిశ్చితార్థం' },
-      { emoji: '💛', label: 'పసుపు కార్యక్రమం' },
-      { emoji: '🪔', label: 'పెళ్ళి కూతురు - పెళ్ళి కొడుకు' },
+      { emoji: '💛', label: 'పసుపు పండుగ' },
+      { emoji: '🪔', label: 'పెళ్ళి కూతురు' },
       { emoji: '🕉️', label: 'వివాహం' },
     ],
     galleryHint: '📸 మీ ఫోటోలను public/gallery/ ఫోల్డర్‌లో ఉంచండి',
-
-    // RSVP
-    rsvpTitle: 'RSVP',
-    rsvpSubtitle: 'దయచేసి మీ రాకను నిర్ధారించండి',
-    rsvpMessage: 'మీ రాక ఈ జంటకు గొప్ప బహుమతి మరియు ఆశీర్వాదం. ఈ శుభ సందర్భాన్ని మీతో కలిసి జరుపుకోవడానికి ఎదురుచూస్తున్నాము!',
-    rsvpMessageTelugu: 'మీ రాక మాకు గొప్ప ఆశీర్వాదం 🙏',
-    rsvpButton: '🙏 మీ రాకను నిర్ధారించండి',
-    rsvpNote: 'దయచేసి 10 ఏప్రిల్ 2026 లోపు మీ రాకను నిర్ధారించండి.',
-    rsvpContactTitle: 'ఏవైనా సందేహాలకు, దయచేసి సంప్రదించండి:',
-    rsvpBrideFamily: '📞 వధువు కుటుంబం: +1 (660) 528-1431',
-    rsvpGroomFamily: '📞 వరుడి కుటుంబం: +1 (669) 290-7861',
-    rsvpEmail: '✉️ ఇమెయిల్: jarugulavenkat7@gmail.com',
 
     // Footer
     footerNames: 'సుష్మిత & నరేష్ కుమార్',
     footerDate: '10 · 05 · 2026',
     footerQuote: '"మా ఆనందాన్ని మీతో పంచుకోవాలని మనస్పూర్తిగా ఆహ్వానిస్తున్నాం."',
     footerMadeWith: 'సుష్మిత & నరేష్ కుమార్ వివాహం కోసం ❤️ తో తయారు చేయబడింది',
-
-    // Music
-    musicLoading: 'మెలోడీ లోడ్ అవుతోంది',
-    musicOn: 'మెలోడీ ఆన్',
-    musicOff: 'మెలోడీ ఆఫ్',
-    musicPlayLabel: 'బ్యాక్‌గ్రౌండ్ మెలోడీ ప్రారంభించండి',
-    musicPauseLabel: 'బ్యాక్‌గ్రౌండ్ మెలోడీ ఆపండి',
 
     // Loader
     loaderName: 'సుష్మిత & నరేష్ కుమార్',
@@ -392,30 +354,11 @@ const translations = {
     ],
     galleryHint: '📸 ನಿಮ್ಮ ಫೋಟೋಗಳನ್ನು public/gallery/ ಫೋಲ್ಡರ್‌ನಲ್ಲಿ ಇಡಿ',
 
-    // RSVP
-    rsvpTitle: 'RSVP',
-    rsvpSubtitle: 'ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಗಮನವನ್ನು ಖಚಿತಪಡಿಸಿ',
-    rsvpMessage: 'ನಿಮ್ಮ ಉಪಸ್ಥಿತಿ ಈ ಜೋಡಿಗೆ ಅತ್ಯಂತ ದೊಡ್ಡ ಉಡುಗೊರೆ ಮತ್ತು ಆಶೀರ್ವಾದವಾಗಿದೆ. ಈ ಶುಭ ಸಂದರ್ಭವನ್ನು ನಿಮ್ಮೊಂದಿಗೆ ಆಚರಿಸಲು ನಾವು ಎದುರು ನೋಡುತ್ತಿದ್ದೇವೆ!',
-    rsvpMessageTelugu: 'ನಿಮ್ಮ ಆಗಮನ ನಮಗೆ ಮಹಾ ಆಶೀರ್ವಾದ 🙏',
-    rsvpButton: '🙏 ನಿಮ್ಮ ಆಗಮನವನ್ನು ಖಚಿತಪಡಿಸಿ',
-    rsvpNote: 'ದಯವಿಟ್ಟು 10 ಏಪ್ರಿಲ್ 2026 ರೊಳಗೆ RSVP ಮಾಡಿ, ವ್ಯವಸ್ಥೆಗಳಿಗೆ ಸಹಾಯವಾಗುತ್ತದೆ.',
-    rsvpContactTitle: 'ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳಿಗಾಗಿ ಸಂಪರ್ಕಿಸಿ:',
-    rsvpBrideFamily: '📞 ವಧುವಿನ ಕುಟುಂಬ: +1 (660) 528-1431',
-    rsvpGroomFamily: '📞 ವರನ ಕುಟುಂಬ: +1 (669) 290-7861',
-    rsvpEmail: '✉️ ಇಮೇಲ್: jarugulavenkat7@gmail.com',
-
     // Footer
     footerNames: 'ಸುಷ್ಮಿತಾ & ನರೇಶ್ ಕುಮಾರ್',
     footerDate: '10 · 05 · 2026',
     footerQuote: '"ಎರಡು ಆತ್ಮಗಳು ಒಂದೇ ಆಲೋಚನೆಯೊಂದಿಗೆ,\nಎರಡು ಹೃದಯಗಳು ಒಂದೇ ತರಹ ತಡಕಾಡುತ್ತವೆ."',
     footerMadeWith: 'ಸುಷ್ಮಿತಾ & ನರೇಶ್ ಕುಮಾರ್ ಮದುವೆಗಾಗಿ ❤️ ಜೊತೆ ನಿರ್ಮಿಸಲಾಗಿದೆ',
-
-    // Music
-    musicLoading: 'ಮೆಲಡಿ ಲೋಡ್ ಆಗುತ್ತಿದೆ',
-    musicOn: 'ಮೆಲಡಿ ಆನ್',
-    musicOff: 'ಮೆಲಡಿ ಆಫ್',
-    musicPlayLabel: 'ಹಿನ್ನೆಲೆ ಮೆಲಡಿಯನ್ನು ಚಾಲನೆ ಮಾಡಿ',
-    musicPauseLabel: 'ಹಿನ್ನೆಲೆ ಮೆಲಡಿಯನ್ನು ನಿಲ್ಲಿಸಿ',
 
     // Loader
     loaderName: 'ಸುಷ್ಮಿತಾ & ನರೇಶ್ ಕುಮಾರ್',

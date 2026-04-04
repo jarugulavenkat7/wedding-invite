@@ -1062,11 +1062,11 @@ section {
 .lang-toggle {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   background: rgba(212, 168, 67, 0.15);
   border: 1px solid var(--gold);
-  border-radius: 20px;
-  padding: 4px;
+  border-radius: 24px;
+  padding: 5px;
   transition: all 0.3s ease;
   font-family: 'Cormorant Garamond', serif;
 }
@@ -1086,10 +1086,10 @@ section {
 .lang-option {
   border: none;
   background: transparent;
-  padding: 0.35rem 0.6rem;
-  border-radius: 16px;
-  font-size: 0.85rem;
-  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 800;
   color: var(--light-gold);
   opacity: 0.5;
   transition: all 0.3s ease;
@@ -1101,8 +1101,8 @@ section {
 .lang-option.active {
   opacity: 1;
   color: var(--gold);
-  background: rgba(212, 168, 67, 0.18);
-  text-shadow: 0 0 8px rgba(212, 168, 67, 0.4);
+  background: rgba(212, 168, 67, 0.22);
+  text-shadow: 0 0 10px rgba(212, 168, 67, 0.5);
 }
 
 @media (max-width: 768px) {

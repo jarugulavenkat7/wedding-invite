@@ -256,7 +256,7 @@ const translations = {
     contactTitle: 'సంప్రదించండి',
     contactSubtitle: 'Contact Us',
     brideSide: 'వధువు వైపు',
-    brideContactName: 'వెంకట్ సాయి జర్గుల (Venkat Sai Jarugula)',
+    brideContactName: 'వెంకట్ సాయి జరుగుల (Venkat Sai Jarugula)',
     brideContactPhone: '+1 660 528 1431',
     groomSide: 'వరుడు వైపు',
     groomContactName: 'రవితేజ మాదల (Raviteja Madala)',

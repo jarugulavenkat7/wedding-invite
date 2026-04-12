@@ -21,6 +21,8 @@ const translations = {
     minutes: 'Minutes',
     seconds: 'Seconds',
     scrollDown: 'Scroll Down',
+    celebrationBegun: 'The Celebration has Begun!',
+    watchLive: 'Watch Live',
 
     // Invitation card
     invocationText: '|| శ్రీ గణేశాయ నమః ||',
@@ -164,6 +166,8 @@ const translations = {
     minutes: 'నిమిషాలు',
     seconds: 'సెకన్లు',
     scrollDown: 'క్రిందికి స్క్రోల్ చేయండి',
+    celebrationBegun: 'వేడుక ప్రారంభమైంది!',
+    watchLive: 'ప్రత్యక్ష ప్రసారం చూడండి',
 
     // Invitation card
     invocationText: '|| శ్రీ గణేశాయ నమః ||',
@@ -307,6 +311,8 @@ const translations = {
     minutes: 'ನಿಮಿಷಗಳು',
     seconds: 'ಸೆಕೆಂಡುಗಳು',
     scrollDown: 'ಕೆಳಗೆ ಸ್ಕ್ರೋಲ್ ಮಾಡಿ',
+    celebrationBegun: 'ಸಂಭ್ರಮ ಪ್ರಾರಂಭವಾಗಿದೆ!',
+    watchLive: 'ನೇರ ಪ್ರಸಾರ ವೀಕ್ಷಿಸಿ',
 
     // Invitation card
     invocationText: '|| ಶ್ರೀ ಗಣೇಶಾಯ ನಮಃ ||',

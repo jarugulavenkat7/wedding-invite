@@ -69,6 +69,8 @@ const Hero = () => {
     // eslint-disable-next-line
   }, []);
 
+  const isTimeUp = timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0;
+
   return (
     <section className="hero" id="home">
       {/* Decorative borders */}
@@ -111,7 +113,7 @@ const Hero = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.3, duration: 0.8, type: 'spring' }}
       >
-        
+
       </motion.div>
 
       <motion.div
@@ -143,33 +145,47 @@ const Hero = () => {
         {t.heroDate}
       </motion.div>
 
-      {/* Countdown */}
-      <motion.div
-        className="countdown"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.6, duration: 0.8 }}
-      >
-        {[
-          { val: timeLeft.days, label: t.days },
-          { val: timeLeft.hours, label: t.hours },
-          { val: timeLeft.minutes, label: t.minutes },
-          { val: timeLeft.seconds, label: t.seconds },
-        ].map((item, i) => (
-          <div className="countdown-item" key={item.label}>
-            <motion.span
-              className="countdown-number"
-              key={item.val}
-              initial={{ scale: 1.2, opacity: 0.5 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.3 }}
-            >
-              {String(item.val).padStart(2, '0')}
-            </motion.span>
-            <span className="countdown-label">{item.label}</span>
-          </div>
-        ))}
-      </motion.div>
+      {/* Countdown or Live Stream */}
+      {isTimeUp ? (
+        <motion.div
+          className="celebration-live"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 1.6, duration: 0.8 }}
+        >
+          <h3 className="celebration-message">{t.celebrationBegun}</h3>
+          <a href="https://youtube.com/live/YOUR_LINK_HERE" target="_blank" rel="noopener noreferrer" className="watch-live-btn">
+            {t.watchLive}
+          </a>
+        </motion.div>
+      ) : (
+        <motion.div
+          className="countdown"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.6, duration: 0.8 }}
+        >
+          {[
+            { val: timeLeft.days, label: t.days },
+            { val: timeLeft.hours, label: t.hours },
+            { val: timeLeft.minutes, label: t.minutes },
+            { val: timeLeft.seconds, label: t.seconds },
+          ].map((item, i) => (
+            <div className="countdown-item" key={item.label}>
+              <motion.span
+                className="countdown-number"
+                key={item.val}
+                initial={{ scale: 1.2, opacity: 0.5 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.3 }}
+              >
+                {String(item.val).padStart(2, '0')}
+              </motion.span>
+              <span className="countdown-label">{item.label}</span>
+            </div>
+          ))}
+        </motion.div>
+      )}
 
       {/* Scroll indicator */}
       <motion.div

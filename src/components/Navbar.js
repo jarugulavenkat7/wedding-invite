@@ -43,8 +43,10 @@ const Navbar = () => {
   const links = [
     { href: '#invitation', label: t.navInvitation },
     { href: '#events', label: t.navEvents },
+    { href: '#engagement-venue', label: t.navEngVenue },
     { href: '#pre-wedding-venue', label: t.navPreVenue },
     { href: '#venue', label: t.navVenue },
+    { href: '#contact', label: t.navContact },
     { href: GOOGLE_FORM_URL, label: t.navRsvp, isExternal: true },
   ];
 

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import useT from '../useT';
 
-const PreWeddingVenue = () => {
+const EngagementVenue = () => {
   const t = useT();
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -13,7 +13,7 @@ const PreWeddingVenue = () => {
   return (
     <section
       className="venue-section"
-      id="pre-wedding-venue"
+      id="engagement-venue"
       ref={ref}
     >
       <motion.h2
@@ -22,7 +22,7 @@ const PreWeddingVenue = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        {t.preVenueTitle}
+        {t.engVenueTitle}
       </motion.h2>
       <motion.p
         className="section-title-telugu"
@@ -30,7 +30,7 @@ const PreWeddingVenue = () => {
         animate={inView ? { opacity: 1 } : {}}
         transition={{ delay: 0.2 }}
       >
-        {t.preVenueSubtitle}
+        {t.engVenueSubtitle}
       </motion.p>
 
       <motion.div
@@ -39,26 +39,26 @@ const PreWeddingVenue = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ delay: 0.4, duration: 0.8 }}
       >
-        <h3 className="venue-name">{t.preVenueName}</h3>
+        <h3 className="venue-name">{t.engVenueName}</h3>
         <p className="venue-address">
-          {t.preVenueAddr1}<br />
-          {t.preVenueAddr2}<br />
-          {t.preVenueAddr3}
+          {t.engVenueAddr1}<br />
+          {t.engVenueAddr2}<br />
+          {t.engVenueAddr3}
         </p>
 
         <motion.a
-          href="https://www.google.com/maps/place/2621+FM1827,+McKinney,+TX+75071/@33.2236629,-96.5476161,17z"
+          href="https://maps.app.goo.gl/ANGvndZmwGxEBLB97"
           target="_blank"
           rel="noopener noreferrer"
           className="venue-map-link"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          {t.preVenueDirections}
+          {t.engVenueDirections}
         </motion.a>
       </motion.div>
     </section>
   );
 };
 
-export default PreWeddingVenue;
+export default EngagementVenue;

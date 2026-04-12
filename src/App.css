@@ -1122,3 +1122,60 @@ section {
     justify-content: space-between;
   }
 }
+
+/* ============ CONTACT INFO ============ */
+.contact-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, var(--warm-white) 0%, var(--cream) 100%);
+  text-align: center;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 2rem auto 0;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-card {
+  background: var(--warm-white);
+  border: 2px solid var(--gold);
+  padding: 2.5rem 2rem;
+  box-shadow: 0 10px 30px rgba(139, 26, 26, 0.08);
+}
+
+.contact-side {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: var(--maroon);
+  margin-bottom: 1rem;
+}
+
+.contact-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-phone {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: var(--gold);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-phone:hover {
+  color: var(--maroon);
+}
+

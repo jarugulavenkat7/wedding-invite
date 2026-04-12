@@ -4,8 +4,10 @@ const translations = {
     navInvitation: 'Invitation',
     navEvents: 'Events',
     navPreVenue: 'Pre-Wedding Venue',
+    navEngVenue: 'Engagement Venue',
     navVenue: 'Venue',
     navGallery: 'Gallery',
+    navContact: 'Contact',
     navRsvp: 'RSVP',
 
     // Hero
@@ -80,12 +82,21 @@ const translations = {
       },
     ],
 
+    // Engagement Venue
+    engVenueTitle: 'Engagement Venue',
+    engVenueSubtitle: 'నిశ్చితార్థం వేదిక',
+    engVenueName: 'Silverstar Event Center',
+    engVenueAddr1: '2680 Denton Tap Rd, Suite 107,',
+    engVenueAddr2: 'Lewisville, TX 75067',
+    engVenueAddr3: 'United States',
+    engVenueDirections: 'Get Directions',
+
     // Pre-Wedding Venue
     preVenueTitle: 'Pre-Wedding Venue',
     preVenueSubtitle: 'పెళ్లి ముందు కార్యక్రమాల వేదిక',
-    preVenueName: 'Silverstar Event Center',
-    preVenueAddr1: '2680 Denton Tap Rd, Suite 107,',
-    preVenueAddr2: 'Lewisville, TX 75067',
+    preVenueName: 'Ranch @McKinney',
+    preVenueAddr1: '2621 FM1827,',
+    preVenueAddr2: 'McKinney, TX 75071',
     preVenueAddr3: 'United States',
     preVenueDirections: 'Get Directions',
 
@@ -97,6 +108,16 @@ const translations = {
     venueAddr2: 'Plano, TX 75024',
     venueAddr3: 'United States',
     venueDirections: 'Get Directions',
+
+    // Contact Info
+    contactTitle: 'Contact Us',
+    contactSubtitle: 'సంప్రదించండి',
+    brideSide: "Bride's Side",
+    brideContactName: 'Venkat Sai Jarugula',
+    brideContactPhone: '+1 660 528 1431',
+    groomSide: "Groom's Side",
+    groomContactName: 'Raviteja Madala',
+    groomContactPhone: '+1 669 290 7861',
 
     // Gallery
     galleryTitle: 'Moments of Joy',
@@ -126,8 +147,10 @@ const translations = {
     navInvitation: 'శుభలేఖ',
     navEvents: 'వేడుకలు',
     navPreVenue: 'పూర్వ వేదిక',
+    navEngVenue: 'నిశ్చితార్థం వేదిక',
     navVenue: 'వేదిక',
     navGallery: 'గ్యాలరీ',
+    navContact: 'సంప్రదించండి',
     navRsvp: 'RSVP',
 
     // Hero
@@ -202,12 +225,21 @@ const translations = {
       },
     ],
 
+    // Engagement Venue
+    engVenueTitle: 'నిశ్చితార్థ వేదిక',
+    engVenueSubtitle: 'Engagement Venue',
+    engVenueName: 'సిల్వర్ స్టార్ ఈవెంట్ సెంటర్ (Silverstar Event Center)',
+    engVenueAddr1: '2680 Denton Tap Rd, Suite 107,',
+    engVenueAddr2: 'Lewisville, TX 75067',
+    engVenueAddr3: 'అమెరికా (USA)',
+    engVenueDirections: 'దారి తెలుసుకోండి',
+
     // Pre-Wedding Venue
     preVenueTitle: 'పెళ్లి ముందు కార్యక్రమాల వేదిక',
     preVenueSubtitle: 'ముందస్తు వేడుకలు',
-    preVenueName: 'సిల్వర్ స్టార్ ఈవెంట్ సెంటర్ (Silverstar Event Center)',
-    preVenueAddr1: '2680 Denton Tap Rd, Suite 107,',
-    preVenueAddr2: 'Lewisville, TX 75067',
+    preVenueName: 'రాంచ్ @మక్కిన్నే',
+    preVenueAddr1: '2621 FM1827,',
+    preVenueAddr2: 'McKinney, TX 75071',
     preVenueAddr3: 'అమెరికా (USA)',
     preVenueDirections: 'దారి తెలుసుకోండి',
 
@@ -219,6 +251,16 @@ const translations = {
     venueAddr2: 'Plano, TX 75024',
     venueAddr3: 'అమెరికా (USA)',
     venueDirections: '📍 దారి తెలుసుకోండి',
+
+    // Contact Info
+    contactTitle: 'సంప్రదించండి',
+    contactSubtitle: 'Contact Us',
+    brideSide: 'వధువు వైపు',
+    brideContactName: 'వెంకట్ సాయి జర్గుల (Venkat Sai Jarugula)',
+    brideContactPhone: '+1 660 528 1431',
+    groomSide: 'వరుడు వైపు',
+    groomContactName: 'రవితేజ మాదల (Raviteja Madala)',
+    groomContactPhone: '+1 669 290 7861',
 
     // Gallery
     galleryTitle: 'ఆనందపు క్షణాలు',
@@ -248,8 +290,10 @@ const translations = {
     navInvitation: 'ಆಮಂತ್ರಣ',
     navEvents: 'ಕಾರ್ಯಕ್ರಮಗಳು',
     navPreVenue: 'ಪೂರ್ವ ಸ್ಥಳ',
+    navEngVenue: 'ನಿಶ್ಚಿತಾರ್ಥದ ಸ್ಥಳ',
     navVenue: 'ಸ್ಥಳ',
     navGallery: 'ಗ್ಯಾಲರಿ',
+    navContact: 'ಸಂಪರ್ಕಿಸಿ',
     navRsvp: 'RSVP',
 
     // Hero
@@ -325,12 +369,21 @@ const translations = {
     ],
 
 
+    // Engagement Venue
+    engVenueTitle: 'ನಿಶ್ಚಿತಾರ್ಥದ ಸ್ಥಳ',
+    engVenueSubtitle: 'Engagement Venue',
+    engVenueName: 'ಸಿಲ್ವರ್ ಸ್ಟಾರ್ ಈವೆಂಟ್ ಸೆಂಟರ್ (Silverstar Event Center)',
+    engVenueAddr1: '2680 Denton Tap Rd, Suite 107,',
+    engVenueAddr2: 'Lewisville, TX 75067',
+    engVenueAddr3: 'United States',
+    engVenueDirections: 'ಮಾರ್ಗ ತಿಳಿದುಕೊಳ್ಳಿ',
+
     // Pre-Wedding Venue
     preVenueTitle: 'ಮದುವೆ ಪೂರ್ವ ಕಾರ್ಯಕ್ರಮದ ಸ್ಥಳ',
     preVenueSubtitle: 'ಮುನ್ನ ಹಬ್ಬಗಳ ವೇದಿಕೆ',
-    preVenueName: 'ಸಿಲ್ವರ್ ಸ್ಟಾರ್ ಈವೆಂಟ್ ಸೆಂಟರ್ (Silverstar Event Center)',
-    preVenueAddr1: '2680 Denton Tap Rd, Suite 107,',
-    preVenueAddr2: 'Lewisville, TX 75067',
+    preVenueName: 'Ranch @McKinney',
+    preVenueAddr1: '2621 FM1827,',
+    preVenueAddr2: 'McKinney, TX 75071',
     preVenueAddr3: 'United States',
     preVenueDirections: 'ಮಾರ್ಗ ತಿಳಿದುಕೊಳ್ಳಿ',
 
@@ -342,6 +395,16 @@ const translations = {
     venueAddr2: 'Plano, TX 75024',
     venueAddr3: 'United States',
     venueDirections: '📍 ಮಾರ್ಗ ತಿಳಿದುಕೊಳ್ಳಿ',
+
+    // Contact Info
+    contactTitle: 'ಸಂಪರ್ಕಿಸಿ',
+    contactSubtitle: 'Contact Us',
+    brideSide: 'ವಧುವಿನ ಕಡೆ',
+    brideContactName: 'ವೆಂಕಟ್ ಸಾಯಿ ಜರುಗುಲ (Venkat Sai Jarugula)',
+    brideContactPhone: '+1 660 528 1431',
+    groomSide: 'ವರನ ಕಡೆ',
+    groomContactName: 'ರವಿತೇಜ ಮಾದಲ (Raviteja Madala)',
+    groomContactPhone: '+1 669 290 7861',
 
     // Gallery
     galleryTitle: 'ಆನಂದದ ಕ್ಷಣಗಳು',

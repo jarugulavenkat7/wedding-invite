@@ -47,7 +47,7 @@ const PreWeddingVenue = () => {
         </p>
 
         <motion.a
-          href="https://www.google.com/maps/place/2621+FM1827,+McKinney,+TX+75071/@33.2236629,-96.5476161,17z"
+          href="https://maps.app.goo.gl/ANGvndZmwGxEBLB97"
           target="_blank"
           rel="noopener noreferrer"
           className="venue-map-link"

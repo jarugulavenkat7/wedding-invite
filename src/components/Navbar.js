@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../LanguageContext';
 import useT from '../useT';
+import { GOOGLE_FORM_URL } from '../rsvpFormUrl';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -44,6 +45,7 @@ const Navbar = () => {
     { href: '#events', label: t.navEvents },
     { href: '#pre-wedding-venue', label: t.navPreVenue },
     { href: '#venue', label: t.navVenue },
+    { href: GOOGLE_FORM_URL, label: t.navRsvp, isExternal: true },
   ];
 
   const closeMobile = () => setMobileOpen(false);
@@ -58,6 +60,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 + i * 0.1 }}
+            {...(link.isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
           >
             {link.label}
           </motion.a>

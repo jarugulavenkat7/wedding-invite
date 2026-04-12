@@ -51,7 +51,7 @@ const translations = {
         nameSub: 'నిశ్చితార్థం',
         date: 'Friday, 8th May 2026',
         time: '6:00 PM onwards',
-        venue: "Ranch @McKinney",
+        venue: 'Silverstar Event Center',
       },
       {
         icon: '💛',
@@ -63,10 +63,10 @@ const translations = {
       },
       {
         icon: '🪔',
-        name: 'Pelli Kuthuru',
-        nameSub: 'పెళ్ళి కూతురు',
+        name: 'Pellikuturu - Pellikoduku',
+        nameSub: 'పెళ్ళి కూతురు - పెళ్ళి కొడుకు',
         date: 'Saturday, 9th May 2026',
-        time: '4:00 PM onwards',
+        time: '6:00 PM onwards',
         venue: 'Ranch @McKinney',
       },
       {
@@ -83,9 +83,9 @@ const translations = {
     // Pre-Wedding Venue
     preVenueTitle: 'Pre-Wedding Venue',
     preVenueSubtitle: 'పెళ్లి ముందు కార్యక్రమాల వేదిక',
-    preVenueName: 'Ranch @McKinney',
-    preVenueAddr1: '2621 FM1827,',
-    preVenueAddr2: 'McKinney, TX 75071',
+    preVenueName: 'Silverstar Event Center',
+    preVenueAddr1: '2680 Denton Tap Rd, Suite 107,',
+    preVenueAddr2: 'Lewisville, TX 75067',
     preVenueAddr3: 'United States',
     preVenueDirections: 'Get Directions',
 
@@ -104,7 +104,7 @@ const translations = {
     galleryItems: [
       { emoji: '🌸', label: 'Engagement' },
       { emoji: '💛', label: 'Haldi' },
-      { emoji: '🪔', label: 'Pelli Kuthuru' },
+      { emoji: '🪔', label: 'Pellikuturu - Pellikoduku' },
       { emoji: '🕉️', label: 'Wedding' },
     ],
     galleryHint: '📸 Replace placeholders with your photos in the public/gallery/ folder',
@@ -173,7 +173,7 @@ const translations = {
         nameSub: 'Engagement',
         date: 'శుక్రవారం, 8 మే 2026',
         time: 'సాయంత్రం 6:00 నుండి',
-        venue: 'రాంచ్ @మక్కిన్నే',
+        venue: 'సిల్వర్ స్టార్ ఈవెంట్ సెంటర్ (Silverstar Event Center)',
       },
       {
         icon: '💛',
@@ -185,10 +185,10 @@ const translations = {
       },
       {
         icon: '🪔',
-        name: 'పెళ్ళి కూతురు',
-        nameSub: 'Pelli Kuthuru',
+        name: 'పెళ్ళి కూతురు - పెళ్ళి కొడుకు',
+        nameSub: 'Pellikuturu - Pellikoduku',
         date: 'శనివారం, 9 మే 2026',
-        time: 'సాయంత్రం 4:00 నుండి',
+        time: 'సాయంత్రం 6:00 నుండి',
         venue: 'రాంచ్ @మక్కిన్నే',
       },
       {
@@ -205,9 +205,9 @@ const translations = {
     // Pre-Wedding Venue
     preVenueTitle: 'పెళ్లి ముందు కార్యక్రమాల వేదిక',
     preVenueSubtitle: 'ముందస్తు వేడుకలు',
-    preVenueName: 'రాంచ్ @మక్కిన్నే',
-    preVenueAddr1: '2621 FM1827,',
-    preVenueAddr2: 'McKinney, TX 75071',
+    preVenueName: 'సిల్వర్ స్టార్ ఈవెంట్ సెంటర్ (Silverstar Event Center)',
+    preVenueAddr1: '2680 Denton Tap Rd, Suite 107,',
+    preVenueAddr2: 'Lewisville, TX 75067',
     preVenueAddr3: 'అమెరికా (USA)',
     preVenueDirections: 'దారి తెలుసుకోండి',
 
@@ -226,7 +226,7 @@ const translations = {
     galleryItems: [
       { emoji: '🌸', label: 'నిశ్చితార్థం' },
       { emoji: '💛', label: 'పసుపు పండుగ' },
-      { emoji: '🪔', label: 'పెళ్ళి కూతురు' },
+      { emoji: '🪔', label: 'పెళ్ళి కూతురు - పెళ్ళి కొడుకు' },
       { emoji: '🕉️', label: 'వివాహం' },
     ],
     galleryHint: '📸 మీ ఫోటోలను public/gallery/ ఫోల్డర్‌లో ఉంచండి',
@@ -295,7 +295,7 @@ const translations = {
         nameSub: 'Engagement',
         date: 'ಶುಕ್ರವಾರ, 8 ಮೇ 2026',
         time: 'ಸಂಜೆ 6:00 ರಿಂದ',
-        venue: 'ರಾಂಚ್ @ಮೆಕ್ಕಿನ್ನಿ',
+        venue: 'ಸಿಲ್ವರ್ ಸ್ಟಾರ್ ಈವೆಂಟ್ ಸೆಂಟರ್ (Silverstar Event Center)',
       },
       {
         icon: '💛',
@@ -308,9 +308,9 @@ const translations = {
       {
         icon: '🪔',
         name: 'ಮದುವೆ ಗಂಡು/ಹೆಣ್ಣು ಕಾರ್ಯ',
-        nameSub: 'Pelli Kuthuru',
+        nameSub: 'Pellikuturu - Pellikoduku',
         date: 'ಶನಿವಾರ, 9 ಮೇ 2026',
-        time: 'ಸಂಜೆ 4:00 ರಿಂದ',
+        time: 'ಸಂಜೆ 6:00 ರಿಂದ',
         venue: 'ರಾಂಚ್ @ಮೆಕ್ಕಿನ್ನಿ',
       },
       {
@@ -328,9 +328,9 @@ const translations = {
     // Pre-Wedding Venue
     preVenueTitle: 'ಮದುವೆ ಪೂರ್ವ ಕಾರ್ಯಕ್ರಮದ ಸ್ಥಳ',
     preVenueSubtitle: 'ಮುನ್ನ ಹಬ್ಬಗಳ ವೇದಿಕೆ',
-    preVenueName: 'Ranch @McKinney',
-    preVenueAddr1: '2621 FM1827,',
-    preVenueAddr2: 'McKinney, TX 75071',
+    preVenueName: 'ಸಿಲ್ವರ್ ಸ್ಟಾರ್ ಈವೆಂಟ್ ಸೆಂಟರ್ (Silverstar Event Center)',
+    preVenueAddr1: '2680 Denton Tap Rd, Suite 107,',
+    preVenueAddr2: 'Lewisville, TX 75067',
     preVenueAddr3: 'United States',
     preVenueDirections: 'ಮಾರ್ಗ ತಿಳಿದುಕೊಳ್ಳಿ',
 

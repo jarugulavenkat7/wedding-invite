@@ -75,6 +75,11 @@ const EventDetails = () => {
             <p className="event-venue">
               <span className="label"></span>{event.venue}
             </p>
+            {event.dressCode && (
+              <p className="event-dress-code">
+                {event.dressCode}
+              </p>
+            )}
           </motion.div>
         ))}
       </div>
